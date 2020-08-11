@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using Ionic.Zip;
+﻿using Ionic.Zip;
 using StormKitty.Implant;
 using System.IO;
 using System.Linq;

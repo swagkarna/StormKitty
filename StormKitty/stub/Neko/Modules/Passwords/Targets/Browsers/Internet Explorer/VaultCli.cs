@@ -1,9 +1,4 @@
-﻿/* 
-    Author : djhohnstein
-    Github : github.com/djhohnstein/SharpWeb
-*/
-
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 
 namespace Stealer.InternetExplorer

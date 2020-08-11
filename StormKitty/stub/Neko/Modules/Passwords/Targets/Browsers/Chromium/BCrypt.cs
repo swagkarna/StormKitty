@@ -1,6 +1,5 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
+﻿/*
+    Класс для работы с BCrypt.Нужен для AES-GCM. 
 */
 
 

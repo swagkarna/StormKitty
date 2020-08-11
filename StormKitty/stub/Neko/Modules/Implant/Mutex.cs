@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System;
+﻿using System;
 using System.Threading;
 
 namespace StormKitty.Implant

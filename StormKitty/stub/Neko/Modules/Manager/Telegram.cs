@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using Stealer;
+﻿using Stealer;
 using System;
 using System.IO;
 using System.Net;

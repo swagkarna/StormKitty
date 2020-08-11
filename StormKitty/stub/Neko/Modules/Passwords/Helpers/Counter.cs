@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Stealer
 {

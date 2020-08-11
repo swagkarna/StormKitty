@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System.IO;
+﻿using System.IO;
 using Microsoft.Win32;
 using System.Collections.Generic;
 using StormKitty;

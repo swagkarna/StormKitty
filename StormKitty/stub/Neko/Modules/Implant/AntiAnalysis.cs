@@ -1,8 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/AntiAnalysis
-*/
-
+﻿// https://github.com/LimerBoy/AntiAnalysis
 using System;
 using System.Linq;
 using System.Management;

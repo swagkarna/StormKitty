@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System;
+﻿using System;
 using System.IO;
 using System.Threading;
 using System.Collections.Generic;

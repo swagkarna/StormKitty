@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace StormKitty
 {

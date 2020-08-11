@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using StormKitty.Implant;
+﻿using StormKitty.Implant;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 

