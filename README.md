@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co/cby0T83/logo.png"> <br>
+  <img src="https://i.ibb.co/HhmVR2v/logo.png"> <br>
   <b>Stealer + Clipper + Keylogger</b> <br>
   <i>Stealer written on C#, logs will be sent to Telegram bot.</i>
 </p>
