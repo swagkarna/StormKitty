@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.VisualBasic</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.VisualBasic.CallType">
+      <summary>Указывает тип процедуры, вызываемой при вызове функции CallByName.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Get">
+      <summary>Извлекается значение свойства.  Этот элемент эквивалентен константе Visual Basic vbGet.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Let">
+      <summary>Определяется значение свойства Object.Этот элемент эквивалентен константе Visual Basic vbLet.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Method">
+      <summary>Вызывается метод.  Этот элемент эквивалентен константе Visual Basic vbMethod.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Set">
+      <summary>Определяется значение свойства.  Этот элемент эквивалентен константе Visual Basic vbSet.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Constants">
+      <summary>В модуле Constants содержатся различные константы.Эти константы могут использоваться в произвольном месте кода.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbBack">
+      <summary>Представляет символ BACKSPACE для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCr">
+      <summary>Представляет символ возврата каретки для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCrLf">
+      <summary>Представляет символ возврата каретки в сочетании с символом перевода строки для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbFormFeed">
+      <summary>Представляет символ перевода строки для функций печати.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbLf">
+      <summary>Представляет символ перевода строки для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNewLine">
+      <summary>Представляет символ новой строки для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullChar">
+      <summary>Представляет символ NULL для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullString">
+      <summary>Представляет строку нулевой длины для функций печати и отображения, а также для вызова внешних процедур.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbTab">
+      <summary>Представляет символ табуляции для функций печати и отображения.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbVerticalTab">
+      <summary>Представляет символ возврата каретки для функций печати.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.HideModuleNameAttribute">
+      <summary>Атрибут HideModuleNameAttribute при применении к модулю позволяет обращаться к членам модуля, используя только квалификацию, необходимую для модуля.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.HideModuleNameAttribute.#ctor">
+      <summary>Инициализирует новый экземпляр атрибута <see cref="T:Microsoft.VisualBasic.HideModuleNameAttribute" />. </summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Strings">
+      <summary>В модуле Strings содержатся процедуры, используемые для выполнения операций над строками. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.Char)">
+      <summary>Возвращает значение типа Integer, представляющее код знака, соответствующий знаку.</summary>
+      <returns>Возвращает значение типа Integer, представляющее код знака, соответствующий знаку.</returns>
+      <param name="String">Обязательный.Любое допустимое значение Char или выражение String.Если параметр <paramref name="String" /> — выражение типа String, в качестве входного значения используется только первый знак строки.Если параметр <paramref name="String" /> равен Nothing или не содержит знаков, возникает ошибка <see cref="T:System.ArgumentException" />.</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.String)">
+      <summary>Возвращает значение типа Integer, представляющее код знака, соответствующий знаку.</summary>
+      <returns>Возвращает значение типа Integer, представляющее код знака, соответствующий знаку.</returns>
+      <param name="String">Обязательный.Любое допустимое значение Char или выражение String.Если параметр <paramref name="String" /> — выражение типа String, в качестве входного значения используется только первый знак строки.Если параметр <paramref name="String" /> равен Nothing или не содержит знаков, возникает ошибка <see cref="T:System.ArgumentException" />.</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)">
+      <summary>Возвращает знак, связанный с указанным кодом знака.</summary>
+      <returns>Возвращает знак, связанный с указанным кодом знака.</returns>
+      <param name="CharCode">Обязательный.Выражение Integer, представляющее <paramref name="code point" /> (код символа) для знака.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="CharCode" /> &lt; -32768 или &gt; 65535 для ChrW.</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Conversions">
+      <summary>Содержит методы, выполняющие различные преобразования типов.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)">
+      <summary>Преобразовывает объект в указанный тип.</summary>
+      <returns>Объект указанного конечного типа.</returns>
+      <param name="Expression">Преобразуемый объект.</param>
+      <param name="TargetType">Тип данных, в который требуется преобразовать объект.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.Boolean" />.</summary>
+      <returns>Значение Boolean.Если задан объект NULL, возвращается False, в противном случае — True.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.Boolean" />.</summary>
+      <returns>Значение Boolean.Если задана строка NULL, возвращается False, в противном случае — True.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.Byte" />.</summary>
+      <returns>Значение объекта типа Byte.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.Byte" />.</summary>
+      <returns>Значение строки типа Byte.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.Char" />.</summary>
+      <returns>Значение объекта типа Char.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.Char" />.</summary>
+      <returns>Значение строки типа Char.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)">
+      <summary>Преобразует объект в одномерный массив типа <see cref="T:System.Char" />.</summary>
+      <returns>Одномерный массив Char</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)">
+      <summary>Преобразует строку в одномерный массив типа <see cref="T:System.Char" />.</summary>
+      <returns>Одномерный массив Char</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.DateTime" />.</summary>
+      <returns>Значение объекта типа DateTime.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.DateTime" />.</summary>
+      <returns>Значение строки типа DateTime.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)">
+      <summary>Преобразует значение типа <see cref="T:System.Boolean" /> в значение типа <see cref="T:System.Decimal" />.</summary>
+      <returns>Логическое значение в представлении Decimal.</returns>
+      <param name="Value">Булево значение, которое требуется преобразовать.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.Decimal" />.</summary>
+      <returns>Значение объекта типа Decimal.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.Decimal" />.</summary>
+      <returns>Значение строки типа Decimal.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.Double" />.</summary>
+      <returns>Значение объекта типа Double.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.Double" />.</summary>
+      <returns>Значение строки типа Double.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)">
+      <summary>Преобразует объект в универсальный тип <paramref name="T" />.</summary>
+      <returns>Структура или объект универсального типа <paramref name="T" />.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <typeparam name="T">Тип, в который преобразуется объект <paramref name="Value" />.</typeparam>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)">
+      <summary>Преобразует объект в целочисленное значение.</summary>
+      <returns>Значение объекта в представлении int.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)">
+      <summary>Преобразует строку в целочисленное значение.</summary>
+      <returns>Значение строки типа int.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)">
+      <summary>Преобразует объект в значение типа Long.</summary>
+      <returns>Значение объекта типа Long.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)">
+      <summary>Преобразует строку в значение типа Long.</summary>
+      <returns>Значение строки типа Long.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.SByte" />.</summary>
+      <returns>Значение объекта в представлении SByte.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)">
+      <summary>Преобразует строку в значение типа <see cref="T:System.SByte" />.</summary>
+      <returns>Значение строки типа SByte.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)">
+      <summary>Преобразует объект в значение типа Short.</summary>
+      <returns>Значение объекта типа Short.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)">
+      <summary>Преобразует строку в значение типа Short.</summary>
+      <returns>Значение строки типа Short.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.Single" />.</summary>
+      <returns>Значение объекта типа Single.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)">
+      <summary>Преобразует значение типа <see cref="T:System.String" /> в значение <see cref="T:System.Single" />.</summary>
+      <returns>Значение строки типа Single.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)">
+      <summary>Преобразует значение типа <see cref="T:System.Boolean" /> в значение типа <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Boolean.</returns>
+      <param name="Value">Преобразуемое значение типа Boolean.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)">
+      <summary>Преобразует значение типа <see cref="T:System.Byte" /> в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Byte.</returns>
+      <param name="Value">Преобразуемое значение Byte.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)">
+      <summary>Преобразует значение типа <see cref="T:System.Char" /> в значение типа <see cref="T:System.String" />.</summary>
+      <returns>Представление типа String значения Char.</returns>
+      <param name="Value">Преобразуемое значение Char.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)">
+      <summary>Преобразует значение типа <see cref="T:System.DateTime" /> в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения DateTime.</returns>
+      <param name="Value">Преобразуемое значение DateTime.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)">
+      <summary>Преобразует значение типа <see cref="T:System.Decimal" /> в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Decimal.</returns>
+      <param name="Value">Преобразуемое значение Decimal.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)">
+      <summary>Преобразует значение типа <see cref="T:System.Double" /> в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Double.</returns>
+      <param name="Value">Преобразуемое значение Double.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)">
+      <summary>Преобразует значение типа Short в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Short.</returns>
+      <param name="Value">Преобразуемое значение Short.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)">
+      <summary>Преобразует целое число в значение типа <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения int.</returns>
+      <param name="Value">Преобразуемое значение int.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)">
+      <summary>Преобразует значение типа Long в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление типа String значения Long.</returns>
+      <param name="Value">Преобразуемое значение Long.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)">
+      <summary>Преобразует объект в значение типа <see cref="T:System.String" />.</summary>
+      <returns>Объект в представлении String.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)">
+      <summary>Преобразует значение типа <see cref="T:System.Single" /> (число одинарной точности с плавающей запятой) в значение типа <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Single.</returns>
+      <param name="Value">Преобразуемое значение Single.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)">
+      <summary>Преобразует значение типа uint в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Uint.</returns>
+      <param name="Value">Преобразуемое значение Uint.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)">
+      <summary>Преобразует значение типа Ulong в значение <see cref="T:System.String" />.</summary>
+      <returns>Представление String значения Ulong.</returns>
+      <param name="Value">Преобразуемое значение Ulong.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)">
+      <summary>Преобразует объект в значение типа Uint.</summary>
+      <returns>Значение объекта типа Uint.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)">
+      <summary>Преобразует строку в значение типа Uint.</summary>
+      <returns>Значение строки типа Uint.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)">
+      <summary>Преобразует объект в значение типа Ulong.</summary>
+      <returns>Значение объекта типа Ulong.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)">
+      <summary>Преобразует строку в значение типа Ulong.</summary>
+      <returns>Значение строки типа Ulong.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)">
+      <summary>Преобразует объект в значение типа Ushort.</summary>
+      <returns>Значение объекта типа Ushort.</returns>
+      <param name="Value">Преобразуемый объект.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)">
+      <summary>Преобразует строку в значение типа Ushort.</summary>
+      <returns>Значение строки типа Ushort.</returns>
+      <param name="Value">Преобразуемая строка.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute">
+      <summary>При применении этого атрибута к классу компилятор неявно вызывает метод инициализации компонента из синтетического конструктора по умолчанию.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute.#ctor">
+      <summary>Инициализирует новый экземпляр атрибута <see cref="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization">
+      <summary>Этот класс используется компилятором Visual Basic при инициализации статических локальных элементов; он не предназначен для вызова непосредственно из программы.Исключение данного типа генерируется, когда не удается инициализировать статическую локальную переменную.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.NewLateBinding">
+      <summary>Этот класс предлагает вспомогательные средства, используемые компилятором Visual Basic для вызовов с поздней привязкой, и не предназначен для вызова непосредственно из программы.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[],System.Boolean)">
+      <summary>Выполняет вызов метода или функции с поздней привязкой.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <returns>Экземпляр объекта вызова.</returns>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Type">Тип объекта вызова.</param>
+      <param name="MemberName">Имя свойства или метода объекта вызова.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <param name="TypeArguments">Массив типов аргументов; используется только в универсальных вызовах для передачи типов аргументов.</param>
+      <param name="CopyBack">Массив значений типа Boolean, которые используются при поздней привязке для информирования веб-сайта вызова о том, какие аргументы совпадают с параметрами, передаваемыми методом ByRef.Каждое значение True указывает, что аргумент совпал с параметром и должен быть скопирован обратно после завершения вызова метода LateCall.</param>
+      <param name="IgnoreReturn">Значение типа Boolean, которое указывает, можно ли игнорировать возвращаемое значение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[])">
+      <summary>Выполняет вызов с поздней привязкой для получения свойства или доступа к полю.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <returns>Экземпляр объекта вызова.</returns>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Type">Тип объекта вызова.</param>
+      <param name="MemberName">Имя свойства или метода объекта вызова.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <param name="TypeArguments">Массив типов аргументов; используется только в универсальных вызовах для передачи типов аргументов.</param>
+      <param name="CopyBack">Массив значений типа Boolean, которые используются при поздней привязке для информирования веб-сайта вызова о том, какие аргументы совпадают с параметрами, передаваемыми методом ByRef.Каждое значение True указывает, что аргумент совпал с параметром и должен быть скопирован обратно после завершения вызова метода LateCall.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexGet(System.Object,System.Object[],System.String[])">
+      <summary>Выполняет вызов с поздней привязкой для получения свойства или доступа к полю.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <returns>Экземпляр объекта вызова.</returns>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSet(System.Object,System.Object[],System.String[])">
+      <summary>Выполняет вызов с поздней привязкой для установки свойства или записи в поле.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)">
+      <summary>Выполняет вызов с поздней привязкой для установки свойства или записи в поле.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <param name="OptimisticSet">Значение типа Boolean, которое определяет, будет ли работать операция установки.Задайте значение True, если полагаете, что в свойстве или поле установлено промежуточное значение; в противном случае задайте False.</param>
+      <param name="RValueBase">Значение типа Boolean, указывающее, что базовая ссылка для поздней ссылки представляет собой RValue.Задайте True, если базовая ссылка для поздней ссылки представляет собой RValue; это позволит генерировать исключение во время выполнения для поздних присваиваний значений полям, содержащим RValues для типов значений.В противном случае задайте False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[])">
+      <summary>Выполняет вызов с поздней привязкой для установки свойства или записи в поле.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Type">Тип объекта вызова.</param>
+      <param name="MemberName">Имя свойства или метода объекта вызова.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <param name="TypeArguments">Массив типов аргументов; используется только в универсальных вызовах для передачи типов аргументов.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean,Microsoft.VisualBasic.CallType)">
+      <summary>Выполняет вызов с поздней привязкой для установки свойства или записи в поле.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Type">Тип объекта вызова.</param>
+      <param name="MemberName">Имя свойства или метода объекта вызова.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <param name="TypeArguments">Массив типов аргументов; используется только в универсальных вызовах для передачи типов аргументов.</param>
+      <param name="OptimisticSet">Значение типа Boolean, которое определяет, будет ли работать операция установки.Задайте значение True, если полагаете, что в свойстве или поле установлено промежуточное значение; в противном случае задайте False.</param>
+      <param name="RValueBase">Значение типа Boolean, указывающее, что базовая ссылка для поздней ссылки представляет собой RValue.Задайте True, если базовая ссылка для поздней ссылки представляет собой RValue; это позволит генерировать исключение во время выполнения для поздних присваиваний значений полям, содержащим RValues для типов значений.В противном случае задайте False.</param>
+      <param name="CallType">Член перечисления типа <see cref="T:Microsoft.VisualBasic.CallType" />, представляющий тип вызываемой процедуры.Значением CallType может быть Method, Get или Set.Используется только Set.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean)">
+      <summary>Выполняет вызов с поздней привязкой для установки свойства или записи в поле.Данный вспомогательный метод не предназначен для вызова непосредственно из программы.</summary>
+      <param name="Instance">Экземпляр объекта вызова, к которому относится данное свойство или метод.</param>
+      <param name="Type">Тип объекта вызова.</param>
+      <param name="MemberName">Имя свойства или метода объекта вызова.</param>
+      <param name="Arguments">Массив аргументов, которые передаются в вызываемый метод или свойство.</param>
+      <param name="ArgumentNames">Массив имен аргументов.</param>
+      <param name="TypeArguments">Массив типов аргументов; используется только в универсальных вызовах для передачи типов аргументов.</param>
+      <param name="OptimisticSet">Значение типа Boolean, которое определяет, будет ли работать операция установки.Задайте значение True, если полагаете, что в свойстве или поле установлено промежуточное значение; в противном случае задайте False.</param>
+      <param name="RValueBase">Значение типа Boolean, указывающее, что базовая ссылка для поздней ссылки представляет собой RValue.Задайте True, если базовая ссылка для поздней ссылки представляет собой RValue; это позволит генерировать исключение во время выполнения для поздних присваиваний значений полям, содержащим RValues для типов значений.В противном случае задайте False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
+      <summary>Этот класс используется компилятором Visual Basic для управления потоком объектов и не предназначен для вызова непосредственно из программы.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)">
+      <summary>Проверяет блокировку синхронизации для указанного типа.</summary>
+      <param name="Expression">Тип данных, для которого проверяется блокировка синхронизации.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl">
+      <summary>Содержит службы, используемые компилятором Visual Basic для компиляции циклов For...Next.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)">
+      <summary>Инициализирует цикл For...Next.</summary>
+      <returns>False, если цикл прерван; в противном случае True.</returns>
+      <param name="Counter">Переменная счетчика цикла.</param>
+      <param name="Start">Начальное значение счетчика цикла.</param>
+      <param name="Limit">Значение параметра To.</param>
+      <param name="StepValue">Значение параметра Step.</param>
+      <param name="LoopForResult">Объект, содержащий проверенные значения параметров цикла.</param>
+      <param name="CounterResult">Значение счетчика для следующей итерации цикла.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)">
+      <summary>Проверяет допустимые значения для счетчика цикла, шага Step и параметра To.</summary>
+      <returns>True, если <paramref name="StepValue" /> больше нуля и <paramref name="count" /> меньше или равно <paramref name="limit" />, или если <paramref name="StepValue" /> меньше или равно нулю и <paramref name="count" /> больше или равно <paramref name="limit" />; в противном случае False.</returns>
+      <param name="count">Обязательный.Значение типа Decimal, представляющее начальное значение, передаваемое для переменной счетчика цикла.</param>
+      <param name="limit">Обязательный.Значение типа Decimal, представляющее значение, передаваемое с использованием ключевого слова To.</param>
+      <param name="StepValue">Обязательный.Значение типа Decimal, представляющее значение, передаваемое с использованием ключевого слова Step.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckObj(System.Object,System.Object,System.Object@)">
+      <summary>Производит переход к следующей итерации цикла For...Next.</summary>
+      <returns>False, если цикл прерван; в противном случае True.</returns>
+      <param name="Counter">Переменная счетчика цикла.</param>
+      <param name="LoopObj">Объект, содержащий проверенные значения параметров цикла.</param>
+      <param name="CounterResult">Значение счетчика для следующей итерации цикла.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR4(System.Single,System.Single,System.Single)">
+      <summary>Проверяет допустимые значения для счетчика цикла, шага Step и параметра To.</summary>
+      <returns>True, если <paramref name="StepValue" /> больше нуля и <paramref name="count" /> меньше или равно <paramref name="limit" />, или если <paramref name="StepValue" /> меньше или равно нулю и <paramref name="count" /> больше или равно <paramref name="limit" />; в противном случае False.</returns>
+      <param name="count">Обязательный.Значение типа Single, представляющее начальное значение, передаваемое для переменной счетчика цикла.</param>
+      <param name="limit">Обязательный.Значение типа Single, представляющее значение, передаваемое с использованием ключевого слова To.</param>
+      <param name="StepValue">Обязательный.Значение типа Single, представляющее значение, передаваемое с использованием ключевого слова Step.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR8(System.Double,System.Double,System.Double)">
+      <summary>Проверяет допустимые значения для счетчика цикла, шага Step и параметра To.</summary>
+      <returns>True, если <paramref name="StepValue" /> больше нуля и <paramref name="count" /> меньше или равно <paramref name="limit" />, или если <paramref name="StepValue" /> меньше или равно нулю и <paramref name="count" /> больше или равно <paramref name="limit" />; в противном случае False.</returns>
+      <param name="count">Обязательный.Значение типа Double, представляющее начальное значение, передаваемое для переменной счетчика цикла.</param>
+      <param name="limit">Обязательный.Значение типа Double, представляющее значение, передаваемое с использованием ключевого слова To.</param>
+      <param name="StepValue">Обязательный.Значение типа Double, представляющее значение, передаваемое с использованием ключевого слова Step.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Operators">
+      <summary>Содержит математические операторы с поздней привязкой, такие как <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" /> и <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />, которые используются компилятором Visual Basic для внутренних целей. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)">
+      <summary>Представляет оператор сложения (+) языка Visual Basic.</summary>
+      <returns>Сумма <paramref name="Left" /> и <paramref name="Right" />.</returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)">
+      <summary>Представляет оператор And языка Visual Basic.</summary>
+      <returns>Для операций типа Boolean: True, если <paramref name="Left" /> и <paramref name="Right" /> имеют значение True, в противном случае False.Для битовых операций: 1, если <paramref name="Left" /> и <paramref name="Right" /> имеют значение 1, в противном случае 0.</returns>
+      <param name="Left">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <param name="Right">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет оператор равенства (=) языка Visual Basic.</summary>
+      <returns>True, если значения <paramref name="Left" /> и <paramref name="Right" /> равны; в противном случае — False.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет оператор "больше чем" (&gt;) языка Visual Basic.</summary>
+      <returns>True, если значение <paramref name="Left" /> больше значения <paramref name="Right" />; в противном случае — False.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет оператор "больше или равно" (&gt;=) языка Visual Basic.</summary>
+      <returns>True, если значение <paramref name="Left" /> больше или равно значению <paramref name="Right" />; в противном случае — False.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет оператор "меньше чем" (&lt;) языка Visual Basic.</summary>
+      <returns>True, если значение <paramref name="Left" /> меньше значения <paramref name="Right" />; в противном случае — False.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет оператор "меньше или равно" (&lt;=) языка Visual Basic.</summary>
+      <returns>True, если значение <paramref name="Left" /> меньше или равно значению <paramref name="Right" />; в противном случае — False.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет оператор "не равно" (&lt;&gt;) языка Visual Basic.</summary>
+      <returns>True, если значения <paramref name="Left" /> и <paramref name="Right" /> не равны; в противном случае — False.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)">
+      <summary>Выполняет двоичное или текстовое сравнение двух заданных строк.</summary>
+      <returns>Значение Условие -1 Значение параметра <paramref name="Left" /> меньше значения <paramref name="Right" />. 0<paramref name="Left" /> равно <paramref name="Right" />. 1 Значение <paramref name="Left" /> больше значения <paramref name="Right" />. </returns>
+      <param name="Left">Обязательный.Произвольное выражение типа String.</param>
+      <param name="Right">Обязательный.Произвольное выражение типа String.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)">
+      <summary>Представляет оператор объединения (&amp;) языка Visual Basic.</summary>
+      <returns>Строка, представляющая результат объединения <paramref name="Left" /> и <paramref name="Right" />.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет перегруженный оператор равенства (=) языка Visual Basic.</summary>
+      <returns>Результат перегруженного оператора "равно".Значение False, если перегрузка операторов не поддерживается.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет перегруженный оператор "больше чем" (&gt;) языка Visual Basic.</summary>
+      <returns>Результат перегруженного оператора "больше".Значение False, если перегрузка операторов не поддерживается.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет перегруженный оператор "больше или равно" (&gt;=) языка Visual Basic.</summary>
+      <returns>Результат перегруженного оператора "больше или равно".Значение False, если перегрузка операторов не поддерживается.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет перегруженный оператор "меньше чем" (&lt;) языка Visual Basic.</summary>
+      <returns>Результат перегруженного оператора "меньше".Значение False, если перегрузка операторов не поддерживается.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет перегруженный оператор "меньше или равно" (&lt;=) языка Visual Basic.</summary>
+      <returns>Результат перегруженного оператора "меньше или равно".Значение False, если перегрузка операторов не поддерживается.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Представляет перегруженный оператор "не равно" (&lt;&gt;) языка Visual Basic.</summary>
+      <returns>Результат перегруженного оператора "не равно".Значение False, если перегрузка операторов не поддерживается.</returns>
+      <param name="Left">Обязательный.Произвольное выражение.</param>
+      <param name="Right">Обязательный.Произвольное выражение.</param>
+      <param name="TextCompare">Обязательный.Значение True, чтобы сравнивать строки без учета регистра символов; в противном случае — значение False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)">
+      <summary>Представляет оператор деления (/) языка Visual Basic.</summary>
+      <returns>Полное частное от деления <paramref name="Left" /> на <paramref name="Right" />, включая остаток, если он имеется.</returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)">
+      <summary>Представляет оператор возведения в степень (^) языка Visual Basic.</summary>
+      <returns>Результат возведения <paramref name="Left" /> в степень <paramref name="Right" />.</returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)">
+      <summary>Представляет оператор деления нацело (\) языка Visual Basic.</summary>
+      <returns>Целочисленное частное от деления <paramref name="Left" /> на <paramref name="Right" />, при котором остаток отбрасывается и возвращается только целая часть результата.</returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)">
+      <summary>Представляет оператор арифметического сдвига влево (&lt;&lt;) языка Visual Basic.</summary>
+      <returns>Целое числовое значение.Результат сдвига битового шаблона.Тип данных такой же, как для <paramref name="Operand" />.</returns>
+      <param name="Operand">Обязательный.Целое числовое выражение.Битовый шаблон, подлежащий сдвигу.Данные должны быть целого типа (SByte, Byte, Short, UShort, Integer, UInteger, Long или ULong).</param>
+      <param name="Amount">Обязательный.Числовое выражение.Количество разрядов, на которое следует сдвинуть битовый шаблон.Данные должны относиться к типу Integer или допускать расширение до типа Integer.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)">
+      <summary>Представляет оператор Mod языка Visual Basic.</summary>
+      <returns>Остаток от деления <paramref name="Left" /> на <paramref name="Right" />. </returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)">
+      <summary>Представляет оператор умножения (*) языка Visual Basic.</summary>
+      <returns>Произведение <paramref name="Left" /> на <paramref name="Right" />.</returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)">
+      <summary>Представляет оператор "унарный минус" (–) языка Visual Basic.</summary>
+      <returns>Отрицательное значение параметра <paramref name="Operand" />.</returns>
+      <param name="Operand">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)">
+      <summary>Представляет оператор Not языка Visual Basic.</summary>
+      <returns>Для операций типа Boolean: False, если <paramref name="Operand" /> имеет значение True, в противном случае True.Для битовых операций: 1, если <paramref name="Operand" /> равняется 0, в противном случае 0.</returns>
+      <param name="Operand">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)">
+      <summary>Представляет оператор Or языка Visual Basic.</summary>
+      <returns>Для операций типа Boolean: False, если <paramref name="Left" /> и <paramref name="Right" /> имеют значение False, в противном случае True.Для битовых операций: 0, если <paramref name="Left" /> и <paramref name="Right" /> имеют значение 0, в противном случае 1.</returns>
+      <param name="Left">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <param name="Right">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)">
+      <summary>Представляет оператор "унарный плюс" (+) языка Visual Basic.</summary>
+      <returns>Значение параметра <paramref name="Operand" />. (Знак <paramref name="Operand" /> не изменяется.)</returns>
+      <param name="Operand">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)">
+      <summary>Представляет оператор арифметического сдвига вправо (&gt;&gt;) языка Visual Basic.</summary>
+      <returns>Целое числовое значение.Результат сдвига битового шаблона.Тип данных такой же, как для <paramref name="Operand" />.</returns>
+      <param name="Operand">Обязательный.Целое числовое выражение.Битовый шаблон, подлежащий сдвигу.Данные должны быть целого типа (SByte, Byte, Short, UShort, Integer, UInteger, Long или ULong).</param>
+      <param name="Amount">Обязательный.Числовое выражение.Количество разрядов, на которое следует сдвинуть битовый шаблон.Данные должны относиться к типу Integer или допускать расширение до типа Integer.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)">
+      <summary>Представляет оператор вычитания (–) языка Visual Basic.</summary>
+      <returns>Разность между <paramref name="Left" /> и <paramref name="Right" />.</returns>
+      <param name="Left">Обязательный.Произвольное числовое выражение.</param>
+      <param name="Right">Обязательный.Произвольное числовое выражение.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)">
+      <summary>Представляет оператор Xor языка Visual Basic.</summary>
+      <returns>Значение типа Boolean или числовое значение.При сравнении типа Boolean возвращается результат применения логической операции "исключающее ИЛИ" (логической исключающей дизъюнкции) к двум значениям Boolean.В случае битовых (числовых) операций возвращается числовое значение, являющееся результатом применения битовой операции "исключающее ИЛИ" (поразрядной исключающей дизъюнкции) к двум битовым шаблонам чисел.Для получения дополнительной информации см. Оператор Xor (Visual Basic).</returns>
+      <param name="Left">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <param name="Right">Обязательный.Произвольное выражение типа Boolean или числового типа.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
+      <summary>Указывает, что текущее значение Option Compare должно быть передано в качестве значения по умолчанию для аргумента. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
+      <summary>Этот вспомогательный класс генерируется компилятором Visual Basic, чтобы указать (отладчику Visual Basic), какой используется режим сравнения — двоичный или текстовый</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" />.Это вспомогательный метод.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ProjectData">
+      <summary>Содержит вспомогательные средства для объекта Visual Basic Err. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError">
+      <summary>Выполняет действия, предусмотренные методом Clear объекта Err.Вспомогательный метод.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception)">
+      <summary>Этот вспомогательный метод используется компилятором Visual Basic для записи сведений об исключениях в объект Err.</summary>
+      <param name="ex">Отслеживаемый объект <see cref="T:System.Exception" />.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception,System.Int32)">
+      <summary>Этот вспомогательный метод используется компилятором Visual Basic для записи сведений об исключениях в объект Err.</summary>
+      <param name="ex">Отслеживаемый объект <see cref="T:System.Exception" />.</param>
+      <param name="lErl">Номер строки исключения.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute">
+      <summary>Этот класс содержит атрибуты, которые применяются к конструкции стандартного модуля, передаваемой в промежуточный язык.Он не предназначен для вызова непосредственно из программы.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
+      <summary>Этот класс используется компилятором Visual Basic для внутренних целей при инициализации статических локальных членов; он не предназначен для вызова непосредственно из программы.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" />.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State">
+      <summary>Возвращает состояние флага инициализации статического локального члена (инициализирован или нет).</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Utils">
+      <summary>Содержит служебные программы, используемые компилятором Visual Basic.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)">
+      <summary>Используется компилятором Visual Basic в качестве вспомогательного метода для Redim.</summary>
+      <returns>Скопированный массив.</returns>
+      <param name="arySrc">Массив, который необходимо скопировать.</param>
+      <param name="aryDest">Массив назначения.</param>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.VisualBasic</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.VisualBasic.CallType">
+      <summary>Indica el tipo de procedimiento que se debe invocar al llamar a la función CallByName.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Get">
+      <summary>Se recupera el valor de propiedad.  Este miembro es equivalente a la constante vbGet de Visual Basic.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Let">
+      <summary>Se determina el valor de propiedad de objeto.Este miembro es equivalente a la constante vbLet de Visual Basic.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Method">
+      <summary>Se invoca un método.  Este miembro es equivalente a la constante vbMethod de Visual Basic.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Set">
+      <summary>Se determina el valor de propiedad.  Este miembro es equivalente a la constante vbSet de Visual Basic.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Constants">
+      <summary>El módulo Constants contiene diversas constantes.Estas constantes pueden utilizarse en cualquier parte del código.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbBack">
+      <summary>Representa un carácter de retroceso para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCr">
+      <summary>Representa un carácter de retorno de carro para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCrLf">
+      <summary>Representa un carácter de retorno de carro combinado con un carácter de avance de línea para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbFormFeed">
+      <summary>Representa un carácter de avance de página para las funciones de impresión.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbLf">
+      <summary>Representa un carácter de salto de línea para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNewLine">
+      <summary>Representa un carácter de nueva línea para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullChar">
+      <summary>Representa un carácter null para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullString">
+      <summary>Representa una cadena de longitud cero para las funciones de impresión y visualización y para llamar a procedimientos externos.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbTab">
+      <summary>Representa un carácter de tabulación para las funciones de impresión y visualización.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbVerticalTab">
+      <summary>Representa un carácter de retorno de carro para las funciones de impresión.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.HideModuleNameAttribute">
+      <summary>El atributo HideModuleNameAttribute, cuando se aplica a un módulo, permite tener acceso a los miembros del módulo utilizando únicamente la cualificación requerida para el módulo.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.HideModuleNameAttribute.#ctor">
+      <summary>Inicializa una nueva instancia del atributo <see cref="T:Microsoft.VisualBasic.HideModuleNameAttribute" />. </summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Strings">
+      <summary>El módulo Strings contiene procedimientos que se utilizan para llevar a cabo operaciones con cadenas. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.Char)">
+      <summary>Devuelve un valor de tipo Integer que representa el código de carácter que corresponde a un carácter.</summary>
+      <returns>Devuelve un valor de tipo Integer que representa el código de carácter que corresponde a un carácter.</returns>
+      <param name="String">Obligatorio.Cualquier expresión válida de tipo Char o String.Si <paramref name="String" /> es una expresión de tipo String, sólo se utiliza el primer carácter de la cadena para la entrada.Si <paramref name="String" /> es Nothing o no contiene caracteres, se genera un error <see cref="T:System.ArgumentException" />.</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.String)">
+      <summary>Devuelve un valor de tipo Integer que representa el código de carácter que corresponde a un carácter.</summary>
+      <returns>Devuelve un valor de tipo Integer que representa el código de carácter que corresponde a un carácter.</returns>
+      <param name="String">Obligatorio.Cualquier expresión válida de tipo Char o String.Si <paramref name="String" /> es una expresión de tipo String, sólo se utiliza el primer carácter de la cadena para la entrada.Si <paramref name="String" /> es Nothing o no contiene caracteres, se genera un error <see cref="T:System.ArgumentException" />.</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)">
+      <summary>Devuelve el carácter asociado al código de carácter especificado.</summary>
+      <returns>Devuelve el carácter asociado al código de carácter especificado.</returns>
+      <param name="CharCode">Obligatorio.Expresión de tipo Integer que representa el <paramref name="code point" /> o el código del carácter.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="CharCode" /> &lt; -32768 o &gt; 65535 para ChrW.</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Conversions">
+      <summary>Proporciona métodos que realizan distintas conversiones de tipos.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)">
+      <summary>Convierte un objeto al tipo especificado.</summary>
+      <returns>Un objeto del tipo de destino especificado.</returns>
+      <param name="Expression">Objeto que se va a convertir.</param>
+      <param name="TargetType">Tipo al que se va a convertir el objeto.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)">
+      <summary>Convierte un objeto en un valor <see cref="T:System.Boolean" />.</summary>
+      <returns>Valor Boolean.Devuelve False si el valor del objeto es null; de lo contrario, es True.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)">
+      <summary>Convierte una cadena en un valor <see cref="T:System.Boolean" />.</summary>
+      <returns>Valor Boolean.Devuelve False si el valor de la cadena es null; de lo contrario, es True.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)">
+      <summary>Convierte un objeto en un valor de <see cref="T:System.Byte" />.</summary>
+      <returns>El valor de Byte del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)">
+      <summary>Convierte una cadena en un valor de <see cref="T:System.Byte" />.</summary>
+      <returns>Valor Byte de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)">
+      <summary>Convierte un objeto en un valor de <see cref="T:System.Char" />.</summary>
+      <returns>Valor de Char del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)">
+      <summary>Convierte una cadena en un valor de <see cref="T:System.Char" />.</summary>
+      <returns>Valor Char de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)">
+      <summary>Convierte un objeto en una matriz de <see cref="T:System.Char" /> unidimensional.</summary>
+      <returns>Una matriz de Char unidimensional.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)">
+      <summary>Convierte una cadena en una matriz de <see cref="T:System.Char" /> unidimensional.</summary>
+      <returns>Una matriz de Char unidimensional.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)">
+      <summary>Convierte un objeto en un valor de <see cref="T:System.DateTime" />.</summary>
+      <returns>Valor de DateTime del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)">
+      <summary>Convierte una cadena en un valor de <see cref="T:System.DateTime" />.</summary>
+      <returns>Valor DateTime de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)">
+      <summary>Convierte un valor <see cref="T:System.Boolean" /> en un valor <see cref="T:System.Decimal" />.</summary>
+      <returns>El valor Decimal del valor Boolean.</returns>
+      <param name="Value">Valor Boolean que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)">
+      <summary>Convierte un objeto en un valor <see cref="T:System.Decimal" />.</summary>
+      <returns>Valor Decimal del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)">
+      <summary>Convierte una cadena en un valor <see cref="T:System.Decimal" />.</summary>
+      <returns>El valor Decimal de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)">
+      <summary>Convierte un objeto en un valor de <see cref="T:System.Double" />.</summary>
+      <returns>Valor de Double del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)">
+      <summary>Convierte una cadena en un valor de <see cref="T:System.Double" />.</summary>
+      <returns>Valor Double de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)">
+      <summary>Convierte un objeto a un tipo genérico <paramref name="T" />.</summary>
+      <returns>Una estructura u objeto de tipo genérico <paramref name="T" />.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <typeparam name="T">Tipo en el que convertir <paramref name="Value" />.</typeparam>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)">
+      <summary>Convierte un objeto en un valor entero.</summary>
+      <returns>El valor int del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)">
+      <summary>Convierte una cadena en un valor entero.</summary>
+      <returns>Valor int de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)">
+      <summary>Convierte un objeto en un valor Long.</summary>
+      <returns>Valor Long del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)">
+      <summary>Convierte una cadena en un valor Long.</summary>
+      <returns>Valor Long de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)">
+      <summary>Convierte un objeto en un valor <see cref="T:System.SByte" />.</summary>
+      <returns>Valor SByte del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)">
+      <summary>Convierte una cadena en un valor <see cref="T:System.SByte" />.</summary>
+      <returns>Valor SByte de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)">
+      <summary>Convierte un objeto en un valor Short.</summary>
+      <returns>Valor Short del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)">
+      <summary>Convierte una cadena en un valor Short.</summary>
+      <returns>Valor Short de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)">
+      <summary>Convierte un objeto en un valor <see cref="T:System.Single" />.</summary>
+      <returns>Valor Single del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)">
+      <summary>Convierte un objeto <see cref="T:System.String" /> en un valor <see cref="T:System.Single" />.</summary>
+      <returns>Valor Single de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)">
+      <summary>Convierte un valor <see cref="T:System.Boolean" /> en un objeto <see cref="T:System.String" />.</summary>
+      <returns>Representación de String del valor Boolean.</returns>
+      <param name="Value">Valor Boolean que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)">
+      <summary>Convierte un valor <see cref="T:System.Byte" /> en un objeto <see cref="T:System.String" />.</summary>
+      <returns>Representación de String del valor Byte.</returns>
+      <param name="Value">Valor Byte que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)">
+      <summary>Convierte un valor <see cref="T:System.Char" /> en un objeto <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Char.</returns>
+      <param name="Value">Valor Char que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)">
+      <summary>Convierte un valor <see cref="T:System.DateTime" /> en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor DateTime.</returns>
+      <param name="Value">Valor DateTime que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)">
+      <summary>Convierte un valor <see cref="T:System.Decimal" /> en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Decimal.</returns>
+      <param name="Value">Valor Decimal que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)">
+      <summary>Convierte un valor <see cref="T:System.Double" /> en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Double.</returns>
+      <param name="Value">Valor Double que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)">
+      <summary>Convierte un valor Short en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Short.</returns>
+      <param name="Value">Valor Short que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)">
+      <summary>Convierte un valor entero en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor int.</returns>
+      <param name="Value">Valor int que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)">
+      <summary>Convierte un valor Long en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Long.</returns>
+      <param name="Value">Valor Long que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)">
+      <summary>Convierte un objeto en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)">
+      <summary>Convierte un valor <see cref="T:System.Single" /> (número de punto flotante de precisión sencilla) en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Single.</returns>
+      <param name="Value">Valor Single que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)">
+      <summary>Convierte un valor uint en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Uint.</returns>
+      <param name="Value">Valor Uint que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)">
+      <summary>Convierte un valor Ulong en un valor <see cref="T:System.String" />.</summary>
+      <returns>La representación de String del valor Ulong.</returns>
+      <param name="Value">Valor Ulong que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)">
+      <summary>Convierte un objeto en un valor Uint.</summary>
+      <returns>Valor Uint del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)">
+      <summary>Convierte una cadena en un valor Uint.</summary>
+      <returns>Valor Uint de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)">
+      <summary>Convierte un objeto en un valor Ulong.</summary>
+      <returns>Valor Ulong del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)">
+      <summary>Convierte una cadena en un valor Ulong.</summary>
+      <returns>Valor Ulong de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)">
+      <summary>Convierte un objeto en un valor Ushort.</summary>
+      <returns>Valor Ushort del objeto.</returns>
+      <param name="Value">Objeto que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)">
+      <summary>Convierte una cadena en un valor de Ushort.</summary>
+      <returns>Valor Ushort de la cadena.</returns>
+      <param name="Value">Cadena que se va a convertir.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute">
+      <summary>Cuando se aplica a una clase, el compilador llama implícitamente a un método de inicialización de componentes desde el constructor sintético predeterminado.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute.#ctor">
+      <summary>Inicializa una nueva instancia del atributo <see cref="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization">
+      <summary>El compilador de Visual Basic utiliza esta clase durante la inicialización local estática; no está diseñada para ser llamada directamente desde el código.Se produce una excepción de este tipo si una variable local estática no se inicializa.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor">
+      <summary>Inicializa una nueva instancia de la clase <see cref="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.NewLateBinding">
+      <summary>Esta clase proporciona los elementos auxiliares que utiliza el compilador de Visual Basic; no está diseñada para que la llame el código directamente.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[],System.Boolean)">
+      <summary>Ejecuta un método enlazado en tiempo de ejecución o una llamada a la función.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <returns>Instancia del objeto de llamada.</returns>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Type">Tipo del objeto de llamada.</param>
+      <param name="MemberName">Nombre de la propiedad o del método del objeto de llamada.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <param name="TypeArguments">Matriz de tipos de argumento; sólo se utiliza para que las llamadas genéricas pasen los tipos de argumento.</param>
+      <param name="CopyBack">Matriz de valores Boolean que el enlazador en tiempo de ejecución utiliza para comunicarse con el sitio de llamada en el que los argumentos hacen coincidir los parámetros ByRef.Cada valor True indica que los argumentos coincidieron y se deben copiar después de que haya finalizado la llamada a LateCall.</param>
+      <param name="IgnoreReturn">Valor Boolean que indica si se puede omitir el valor devuelto o no.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[])">
+      <summary>Ejecuta una llamada de acceso a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <returns>Instancia del objeto de llamada.</returns>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Type">Tipo del objeto de llamada.</param>
+      <param name="MemberName">Nombre de la propiedad o del método del objeto de llamada.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <param name="TypeArguments">Matriz de tipos de argumento; sólo se utiliza para que las llamadas genéricas pasen los tipos de argumento.</param>
+      <param name="CopyBack">Matriz de valores Boolean que el enlazador en tiempo de ejecución utiliza para comunicarse con el sitio de llamada en el que los argumentos hacen coincidir los parámetros ByRef.Cada valor True indica que los argumentos coincidieron y se deben copiar después de que haya finalizado la llamada a LateCall.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexGet(System.Object,System.Object[],System.String[])">
+      <summary>Ejecuta una llamada de acceso a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <returns>Instancia del objeto de llamada.</returns>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSet(System.Object,System.Object[],System.String[])">
+      <summary>Ejecuta una llamada de escritura a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)">
+      <summary>Ejecuta una llamada de escritura a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <param name="OptimisticSet">Valor Boolean utilizado para determinar si funcionará la operación de establecimiento.Se establece en True cuando se crea que se ha establecido un valor intermedio en la propiedad o campo; en caso contrario, es False.</param>
+      <param name="RValueBase">Valor Boolean que especifica cuándo la referencia base de la referencia enlazada es RValue.Se establece en True cuando la referencia base de la referencia enlazada es RValue; de esta forma, puede generar una excepción en tiempo de ejecución para asignaciones enlazadas a los campos de RValues de tipos de valor.En caso contrario, se establece en False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[])">
+      <summary>Ejecuta una llamada de escritura a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Type">Tipo del objeto de llamada.</param>
+      <param name="MemberName">Nombre de la propiedad o del método del objeto de llamada.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <param name="TypeArguments">Matriz de tipos de argumento; sólo se utiliza para que las llamadas genéricas pasen los tipos de argumento.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean,Microsoft.VisualBasic.CallType)">
+      <summary>Ejecuta una llamada de escritura a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Type">Tipo del objeto de llamada.</param>
+      <param name="MemberName">Nombre de la propiedad o del método del objeto de llamada.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <param name="TypeArguments">Matriz de tipos de argumento; sólo se utiliza para que las llamadas genéricas pasen los tipos de argumento.</param>
+      <param name="OptimisticSet">Valor Boolean utilizado para determinar si funcionará la operación de establecimiento.Se establece en True cuando se crea que se ha establecido un valor intermedio en la propiedad o campo; en caso contrario, es False.</param>
+      <param name="RValueBase">Valor Boolean que especifica cuándo la referencia base de la referencia enlazada es RValue.Se establece en True cuando la referencia base de la referencia enlazada es RValue; de esta forma, puede generar una excepción en tiempo de ejecución para asignaciones enlazadas a los campos de RValues de tipos de valor.En caso contrario, se establece en False.</param>
+      <param name="CallType">Miembro de enumeración de tipo <see cref="T:Microsoft.VisualBasic.CallType" /> que representa el tipo de procedimiento al que se llama.El valor de CallType puede ser Method, Get o Set.Sólo se utiliza Set.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean)">
+      <summary>Ejecuta una llamada de escritura a get o al campo de la propiedad enlazada en tiempo de ejecución.Este método auxiliar no está diseñado para ser llamado directamente desde el código.</summary>
+      <param name="Instance">Instancia del objeto de llamada que expone la propiedad o el método.</param>
+      <param name="Type">Tipo del objeto de llamada.</param>
+      <param name="MemberName">Nombre de la propiedad o del método del objeto de llamada.</param>
+      <param name="Arguments">Matriz que contiene los argumentos que se van a pasar a la propiedad o al método al que se llama.</param>
+      <param name="ArgumentNames">Matriz de nombres de argumento.</param>
+      <param name="TypeArguments">Matriz de tipos de argumento; sólo se utiliza para que las llamadas genéricas pasen los tipos de argumento.</param>
+      <param name="OptimisticSet">Valor Boolean utilizado para determinar si funcionará la operación de establecimiento.Se establece en True cuando se crea que se ha establecido un valor intermedio en la propiedad o campo; en caso contrario, es False.</param>
+      <param name="RValueBase">Valor Boolean que especifica cuándo la referencia base de la referencia enlazada es RValue.Se establece en True cuando la referencia base de la referencia enlazada es RValue; de esta forma, puede generar una excepción en tiempo de ejecución para asignaciones enlazadas a los campos de RValues de tipos de valor.En caso contrario, se establece en False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
+      <summary>El compilador de Visual Basic utiliza esta clase para el control de flujo de objetos; no se ha creado para que lo llame directamente el código.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)">
+      <summary>Busca un bloqueo de sincronización en el tipo especificado.</summary>
+      <param name="Expression">El tipo de datos para el que se busca el bloqueo de sincronización.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl">
+      <summary>Proporciona al compilador de Visual Basic los servicios para compilar los bucles For...Next.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)">
+      <summary>Inicializa un bucle For...Next.</summary>
+      <returns>Es False si el bucle se ha terminado; de lo contrario, es True.</returns>
+      <param name="Counter">Variable del contador de bucles.</param>
+      <param name="Start">Valor inicial del contador de bucles.</param>
+      <param name="Limit">Valor de la opción To.</param>
+      <param name="StepValue">Valor de la opción Step.</param>
+      <param name="LoopForResult">Objeto que contiene valores comprobados para los valores del bucle.</param>
+      <param name="CounterResult">Valor del contador para la siguiente iteración del bucle.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)">
+      <summary>Comprueba si hay valores válidos para el contador de bucles, valores Step y To.</summary>
+      <returns>Es True si <paramref name="StepValue" /> es mayor que cero y <paramref name="count" /> es menor o igual que <paramref name="limit" />, o bien, si <paramref name="StepValue" /> es menor o igual que cero y <paramref name="count" /> es mayor o igual que <paramref name="limit" />; de lo contrario, es False.</returns>
+      <param name="count">Obligatorio.Valor de tipo Decimal que representa el valor inicial que se ha pasado para la variable del contador de bucles.</param>
+      <param name="limit">Obligatorio.Valor de tipo Decimal que representa el valor que se ha pasado mediante la palabra clave To.</param>
+      <param name="StepValue">Obligatorio.Valor de tipo Decimal que representa el valor que se ha pasado mediante la palabra clave Step.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckObj(System.Object,System.Object,System.Object@)">
+      <summary>Incrementa un bucle For...Next.</summary>
+      <returns>Es False si el bucle se ha terminado; de lo contrario, es True.</returns>
+      <param name="Counter">Variable del contador de bucles.</param>
+      <param name="LoopObj">Objeto que contiene valores comprobados para los valores del bucle.</param>
+      <param name="CounterResult">Valor del contador para la siguiente iteración del bucle.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR4(System.Single,System.Single,System.Single)">
+      <summary>Comprueba si hay valores válidos para el contador de bucles, valores Step y To.</summary>
+      <returns>Es True si <paramref name="StepValue" /> es mayor que cero y <paramref name="count" /> es menor o igual que <paramref name="limit" />, o bien, si <paramref name="StepValue" /> es menor o igual que cero y <paramref name="count" /> es mayor o igual que <paramref name="limit" />; de lo contrario, es False.</returns>
+      <param name="count">Obligatorio.Valor de tipo Single que representa el valor inicial que se ha pasado para la variable del contador de bucles.</param>
+      <param name="limit">Obligatorio.Valor de tipo Single que representa el valor que se ha pasado mediante la palabra clave To.</param>
+      <param name="StepValue">Obligatorio.Valor de tipo Single que representa el valor que se ha pasado mediante la palabra clave Step.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR8(System.Double,System.Double,System.Double)">
+      <summary>Comprueba si hay valores válidos para el contador de bucles, valores Step y To.</summary>
+      <returns>Es True si <paramref name="StepValue" /> es mayor que cero y <paramref name="count" /> es menor o igual que <paramref name="limit" />, o bien, si <paramref name="StepValue" /> es menor o igual que cero y <paramref name="count" /> es mayor o igual que <paramref name="limit" />; de lo contrario, es False.</returns>
+      <param name="count">Obligatorio.Valor de tipo Double que representa el valor inicial que se ha pasado para la variable del contador de bucles.</param>
+      <param name="limit">Obligatorio.Valor de tipo Double que representa el valor que se ha pasado mediante la palabra clave To.</param>
+      <param name="StepValue">Obligatorio.Valor de tipo Double que representa el valor que se ha pasado mediante la palabra clave Step.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Operators">
+      <summary>Proporciona operadores matemáticos enlazados en tiempo de ejecución, como <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" /> y <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />, que el compilador de Visual Basic utiliza internamente. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)">
+      <summary>Representa el operador de suma (+) de Visual Basic.</summary>
+      <returns>La suma de <paramref name="Left" /> y <paramref name="Right" />.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)">
+      <summary>Representa el operador And de Visual Basic.</summary>
+      <returns>Para las operaciones Boolean, es True si <paramref name="Left" /> y <paramref name="Right" /> se evalúan como True; de lo contrario, es False.Para las operaciones bit a bit, es 1 si <paramref name="Left" /> y <paramref name="Right" /> se evalúan como 1; de lo contrario, es 0.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador de igualdad (=) de Visual Basic.</summary>
+      <returns>Es True si <paramref name="Left" /> y <paramref name="Right" /> son iguales; en caso contrario, es False.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador mayor que (&gt;) de Visual Basic.</summary>
+      <returns>Es True si <paramref name="Left" /> es mayor que <paramref name="Right" />; en caso contrario, es False.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador mayor o igual que (&gt;=) de Visual Basic.</summary>
+      <returns>Es True si <paramref name="Left" /> es mayor o igual que <paramref name="Right" />; en caso contrario, es False.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador menor que (&lt;) de Visual Basic.</summary>
+      <returns>Es True si <paramref name="Left" /> es menor que <paramref name="Right" />; en caso contrario, es False.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador menor o igual que (&lt;=) de Visual Basic.</summary>
+      <returns>Es True si <paramref name="Left" /> es menor o igual que <paramref name="Right" />; en caso contrario, es False.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador de desigualdad (&lt;&gt;) de Visual Basic.</summary>
+      <returns>Es True si <paramref name="Left" /> no es igual a <paramref name="Right" />; en caso contrario, es False.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)">
+      <summary>Realiza una comparación de cadenas de texto o binarias dadas dos cadenas.</summary>
+      <returns>Valor Condition -1 <paramref name="Left" /> es menor que <paramref name="Right" />. 0<paramref name="Left" /> es igual a <paramref name="Right" />. 1 <paramref name="Left" /> es mayor que <paramref name="Right" />. </returns>
+      <param name="Left">Obligatorio.Cualquier expresión de tipo String.</param>
+      <param name="Right">Obligatorio.Cualquier expresión de tipo String.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)">
+      <summary>Representa el operador de concatenación (&amp;) de Visual Basic.</summary>
+      <returns>Cadena que representa la concatenación de <paramref name="Left" /> y <paramref name="Right" />.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador de igualdad (=) sobrecargado de Visual Basic.</summary>
+      <returns>El resultado del operador de igualdad sobrecargado.Es False si no se admite la sobrecarga del operador.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador mayor que (&gt;) sobrecargado de Visual Basic.</summary>
+      <returns>Resultado del operador mayor que sobrecargado.Es False si no se admite la sobrecarga del operador.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador mayor o igual que (&gt;=) sobrecargado de Visual Basic.</summary>
+      <returns>Resultado del operador mayor o igual que sobrecargado.Es False si no se admite la sobrecarga del operador.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador menor que (&lt;) sobrecargado de Visual Basic.</summary>
+      <returns>Resultado del operador menor que sobrecargado.Es False si no se admite la sobrecarga del operador.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador menor o igual que (&lt;=) sobrecargado de Visual Basic.</summary>
+      <returns>Resultado del operador menor o igual que sobrecargado.Es False si no se admite la sobrecarga del operador.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Representa el operador de desigualdad (&lt;&gt;) sobrecargado de Visual Basic.</summary>
+      <returns>Resultado del operador de desigualdad sobrecargado.Es False si no se admite la sobrecarga del operador.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión.</param>
+      <param name="Right">Obligatorio.Cualquier expresión.</param>
+      <param name="TextCompare">Obligatorio.True si se va a realizar una comparación de cadenas sin distinguir mayúsculas de minúsculas; de lo contrario, False.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)">
+      <summary>Representa el operador de división (/) de Visual Basic.</summary>
+      <returns>Cociente completo de <paramref name="Left" /> dividido entre <paramref name="Right" />, incluido cualquier resto.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)">
+      <summary>Representa el operador exponencial (^) de Visual Basic.</summary>
+      <returns>Resultado de <paramref name="Left" /> elevado a la potencia de <paramref name="Right" />.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)">
+      <summary>Representa el operador de división (\) de enteros de Visual Basic.</summary>
+      <returns>Cociente entero de <paramref name="Left" /> dividido entre <paramref name="Right" />, que descarta cualquier resto y conserva sólo la parte entera.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)">
+      <summary>Representa el operador de desplazamiento aritmético a la izquierda (&lt;&lt;) de Visual Basic.</summary>
+      <returns>Valor numérico integral.Resultado de desplazar el modelo de bits.El tipo de datos es el mismo que el de <paramref name="Operand" />.</returns>
+      <param name="Operand">Obligatorio.Expresión numérica integral.Modelo de bits que se va a desplazar.El tipo de datos debe ser un tipo entero (SByte, Byte, Short, UShort, Integer, UInteger, Long o ULong).</param>
+      <param name="Amount">Obligatorio.Expresión numérica.Número de bits que se va a desplazar el modelo de bits.El tipo de datos debe ser Integer o ampliarse a Integer.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)">
+      <summary>Representa el operador Mod de Visual Basic.</summary>
+      <returns>Resto después de dividir <paramref name="Left" /> entre <paramref name="Right" />. </returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)">
+      <summary>Representa el operador de multiplicación (*) de Visual Basic.</summary>
+      <returns>Producto de <paramref name="Left" /> y <paramref name="Right" />.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)">
+      <summary>Representa el operador unario menos (–) de Visual Basic.</summary>
+      <returns>Valor negativo de <paramref name="Operand" />.</returns>
+      <param name="Operand">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)">
+      <summary>Representa el operador Not de Visual Basic.</summary>
+      <returns>Para las operaciones Boolean, es False si <paramref name="Operand" /> es True; de lo contrario, es True.Para las operaciones bit a bit, es 1 si <paramref name="Operand" /> es 0; de lo contrario, es 0.</returns>
+      <param name="Operand">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)">
+      <summary>Representa el operador Or de Visual Basic.</summary>
+      <returns>Para las operaciones Boolean, es False si <paramref name="Left" /> y <paramref name="Right" /> se evalúan como False; de lo contrario, es True.Para las operaciones bit a bit, es 0 si <paramref name="Left" /> y <paramref name="Right" /> se evalúan como 0; de lo contrario, es 1.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)">
+      <summary>Representa el operador unario más (+) de Visual Basic.</summary>
+      <returns>Valor de <paramref name="Operand" />. (El signo de <paramref name="Operand" /> no cambia.)</returns>
+      <param name="Operand">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)">
+      <summary>Representa el operador de desplazamiento aritmético a la derecha (&gt;&gt;) de Visual Basic.</summary>
+      <returns>Valor numérico integral.Resultado de desplazar el modelo de bits.El tipo de datos es el mismo que el de <paramref name="Operand" />.</returns>
+      <param name="Operand">Obligatorio.Expresión numérica integral.Modelo de bits que se va a desplazar.El tipo de datos debe ser un tipo entero (SByte, Byte, Short, UShort, Integer, UInteger, Long o ULong).</param>
+      <param name="Amount">Obligatorio.Expresión numérica.Número de bits que se va a desplazar el modelo de bits.El tipo de datos debe ser Integer o ampliarse a Integer.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)">
+      <summary>Representa el operador de resta (–) de Visual Basic.</summary>
+      <returns>Diferencia entre <paramref name="Left" /> y <paramref name="Right" />.</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)">
+      <summary>Representa el operador Xor de Visual Basic.</summary>
+      <returns>Valor de tipo Boolean o valor numérico.Para una comparación Boolean, el valor devuelto es la exclusión lógica (disyunción lógica exclusiva) de dos valores Boolean.Para las operaciones (numéricas) bit a bit, el valor devuelto es un valor numérico que representa la exclusión bit a bit (disyunción bit a bit exclusiva) de dos modelos de bits numéricos.Para obtener más información, vea Xor (Operador, Visual Basic).</returns>
+      <param name="Left">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <param name="Right">Obligatorio.Cualquier expresión numérica o de tipo Boolean.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
+      <summary>Especifica que el valor actual de Option Compare debe pasarse como valor predeterminado de un argumento. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute.#ctor">
+      <summary>Inicializa una nueva instancia de la clase <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
+      <summary>El compilador de Visual Basic emite esta clase auxiliar para indicar (en la depuración de Visual Basic) qué opción de comparación, de texto o binaria, se utiliza.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor">
+      <summary>Inicializa una nueva instancia de la clase <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" />.Este método es un método auxiliar.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ProjectData">
+      <summary>Proporciona los elementos auxiliares del objeto Err de Visual Basic. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError">
+      <summary>Realiza el trabajo que corresponde al método Clear del objeto Err.Es un método auxiliar.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception)">
+      <summary>El compilador de Visual Basic utiliza este método auxiliar para capturar las excepciones del objeto Err.</summary>
+      <param name="ex">Objeto <see cref="T:System.Exception" /> que se va a detectar.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception,System.Int32)">
+      <summary>El compilador de Visual Basic utiliza este método auxiliar para capturar las excepciones del objeto Err.</summary>
+      <param name="ex">Objeto <see cref="T:System.Exception" /> que se va a detectar.</param>
+      <param name="lErl">Número de línea de la excepción.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute">
+      <summary>Esta clase proporciona atributos que se aplican a la construcción del módulo estándar cuando se emite a Lenguaje intermedio (IL).No está pensada para que se llame directamente desde el código.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute.#ctor">
+      <summary>Inicializa una nueva instancia de la clase <see cref="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
+      <summary>El compilador de Visual Basic utiliza esta clase internamente durante la inicialización de miembros locales estáticos; no está diseñada para que se llame directamente desde el código.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.#ctor">
+      <summary>Inicializa una nueva instancia de la clase <see cref="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" />.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State">
+      <summary>Devuelve el estado de la marca de inicialización del miembro local estático (inicializado o no).</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Utils">
+      <summary>Contiene utilidades que el compilador de Visual Basic usa.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)">
+      <summary>Este método lo utiliza el compilador de Visual Basic como un método auxiliar de Redim.</summary>
+      <returns>La matriz copiada.</returns>
+      <param name="arySrc">Matriz que se va a copiar.</param>
+      <param name="aryDest">Matriz de destino.</param>
+    </member>
+  </members>
+</doc>

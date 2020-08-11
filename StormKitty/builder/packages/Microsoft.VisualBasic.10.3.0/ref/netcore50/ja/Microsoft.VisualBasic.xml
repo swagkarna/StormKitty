@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.VisualBasic</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.VisualBasic.CallType">
+      <summary>CallByName 関数を呼び出すときに呼び出すプロシージャの種類を示します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Get">
+      <summary>プロパティ値を取得します。このメンバーは、Visual Basic の定数 vbGet と等価です。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Let">
+      <summary>オブジェクトのプロパティ値を設定します。このメンバーは、Visual Basic の定数 vbLet と等価です。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Method">
+      <summary>メソッドを起動します。このメンバーは、Visual Basic の定数 vbMethod と等価です。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Set">
+      <summary>プロパティ値を設定します。このメンバーは、Visual Basic の定数 vbSet と等価です。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Constants">
+      <summary>Constants モジュールには、さまざまな定数が含まれています。この定数は、コード内のどこにでも使用できます。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbBack">
+      <summary>印刷機能および表示機能のためのバックスペース文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCr">
+      <summary>印刷機能および表示機能のための復帰文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCrLf">
+      <summary>印刷機能および表示機能のためのライン フィード文字と組み合わされた復帰文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbFormFeed">
+      <summary>印刷機能のためのフォーム フィード文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbLf">
+      <summary>印刷機能および表示機能のためのライン フィード文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNewLine">
+      <summary>印刷機能および表示機能のための改行文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullChar">
+      <summary>印刷機能および表示機能のための null 文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullString">
+      <summary>印刷機能、表示機能、および外部プロシージャ呼び出しのための長さ 0 の文字列を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbTab">
+      <summary>印刷機能および表示機能のためのタブ文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbVerticalTab">
+      <summary>印刷機能のための復帰文字を表します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.HideModuleNameAttribute">
+      <summary>HideModuleNameAttribute 属性がモジュールに適用された場合は、モジュールに必要な修飾だけを使用してモジュール メンバーにアクセスできます。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.HideModuleNameAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.HideModuleNameAttribute" /> 属性の新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Strings">
+      <summary>Strings モジュールに含まれるプロシージャを使って、文字列操作を実行します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.Char)">
+      <summary>文字に対応する文字コードを表す Integer 値を返します。</summary>
+      <returns>文字に対応する文字コードを表す Integer 値を返します。</returns>
+      <param name="String">必須。任意の有効な Char 型または String 型の式。<paramref name="String" /> が String 型の式である場合は、文字列の最初の文字のみが入力に使用されます。<paramref name="String" /> が Nothing であるか、文字を含んでいない場合は、<see cref="T:System.ArgumentException" /> エラーが発生します。</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.String)">
+      <summary>文字に対応する文字コードを表す Integer 値を返します。</summary>
+      <returns>文字に対応する文字コードを表す Integer 値を返します。</returns>
+      <param name="String">必須。任意の有効な Char 型または String 型の式。<paramref name="String" /> が String 型の式である場合は、文字列の最初の文字のみが入力に使用されます。<paramref name="String" /> が Nothing であるか、文字を含んでいない場合は、<see cref="T:System.ArgumentException" /> エラーが発生します。</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)">
+      <summary>指定された文字コードに対応する文字を返します。</summary>
+      <returns>指定された文字コードに対応する文字を返します。</returns>
+      <param name="CharCode">必須。文字の <paramref name="code point" /> (文字コード) を表す Integer 型の式。</param>
+      <exception cref="T:System.ArgumentException">ChrW の <paramref name="CharCode" /> が -32768 より小さいか、65535 より大きい。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Conversions">
+      <summary>さまざまな型変換を実行するメソッドを提供します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)">
+      <summary>オブジェクトを指定された型に変換します。</summary>
+      <returns>指定した型のオブジェクト。</returns>
+      <param name="Expression">変換対象のオブジェクト。</param>
+      <param name="TargetType">変換後のオブジェクトの型。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.Boolean" /> 値に変換します。</summary>
+      <returns>Boolean 値。オブジェクトが null の場合は False を返し、それ以外の場合は True を返します。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)">
+      <summary>文字列を <see cref="T:System.Boolean" /> 値に変換します。</summary>
+      <returns>Boolean 値。文字列が null の場合は False を返し、それ以外の場合は True を返します。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.Byte" /> 値に変換します。</summary>
+      <returns>オブジェクトの Byte 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)">
+      <summary>文字列を <see cref="T:System.Byte" /> 値に変換します。</summary>
+      <returns>文字列の Byte 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.Char" /> 値に変換します。</summary>
+      <returns>オブジェクトの Char 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)">
+      <summary>文字列を <see cref="T:System.Char" /> 値に変換します。</summary>
+      <returns>文字列の Char 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)">
+      <summary>オブジェクトを 1 次元の <see cref="T:System.Char" /> 配列に変換します。</summary>
+      <returns>1 次元の Char 配列。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)">
+      <summary>文字列を 1 次元の <see cref="T:System.Char" /> 配列に変換します。</summary>
+      <returns>1 次元の Char 配列。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.DateTime" /> 値に変換します。</summary>
+      <returns>オブジェクトの DateTime 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)">
+      <summary>文字列を <see cref="T:System.DateTime" /> 値に変換します。</summary>
+      <returns>文字列の DateTime 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)">
+      <summary>
+        <see cref="T:System.Boolean" /> 値を <see cref="T:System.Decimal" /> 値に変換します。</summary>
+      <returns>ブール値の Decimal 値。</returns>
+      <param name="Value">変換するブール値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.Decimal" /> 値に変換します。</summary>
+      <returns>オブジェクトの Decimal 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)">
+      <summary>文字列を <see cref="T:System.Decimal" /> 値に変換します。</summary>
+      <returns>文字列の Decimal 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.Double" /> 値に変換します。</summary>
+      <returns>オブジェクトの Double 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)">
+      <summary>文字列を <see cref="T:System.Double" /> 値に変換します。</summary>
+      <returns>文字列の Double 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)">
+      <summary>オブジェクトをジェネリック型 <paramref name="T" /> に変換します。</summary>
+      <returns>ジェネリック型 <paramref name="T" /> の構造体またはオブジェクト。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <typeparam name="T">変換後の <paramref name="Value" /> の型。</typeparam>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)">
+      <summary>オブジェクトを整数値に変換します。</summary>
+      <returns>オブジェクトの int 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)">
+      <summary>文字列を整数値に変換します。</summary>
+      <returns>文字列の int 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)">
+      <summary>オブジェクトを Long 値に変換します。</summary>
+      <returns>オブジェクトの Long 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)">
+      <summary>文字列を Long 値に変換します。</summary>
+      <returns>文字列の Long 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.SByte" /> 値に変換します。</summary>
+      <returns>オブジェクトの SByte 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)">
+      <summary>文字列を <see cref="T:System.SByte" /> 値に変換します。</summary>
+      <returns>文字列の SByte 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)">
+      <summary>オブジェクトを Short 値に変換します。</summary>
+      <returns>オブジェクトの Short 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)">
+      <summary>文字列を Short 値に変換します。</summary>
+      <returns>文字列の Short 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.Single" /> 値に変換します。</summary>
+      <returns>オブジェクトの Single 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)">
+      <summary>
+        <see cref="T:System.String" /> を <see cref="T:System.Single" /> 値に変換します。</summary>
+      <returns>文字列の Single 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)">
+      <summary>
+        <see cref="T:System.Boolean" /> 値を <see cref="T:System.String" /> に変換します。</summary>
+      <returns>Boolean 値の String 表現。</returns>
+      <param name="Value">変換する Boolean 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)">
+      <summary>
+        <see cref="T:System.Byte" /> 値を <see cref="T:System.String" /> に変換します。</summary>
+      <returns>Byte 値の String 表現。</returns>
+      <param name="Value">変換する Byte 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)">
+      <summary>
+        <see cref="T:System.Char" /> 値を <see cref="T:System.String" /> に変換します。</summary>
+      <returns>Char 値の String 表現。</returns>
+      <param name="Value">変換する Char 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)">
+      <summary>
+        <see cref="T:System.DateTime" /> 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>DateTime 値の String 表現。</returns>
+      <param name="Value">変換する DateTime 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)">
+      <summary>
+        <see cref="T:System.Decimal" /> 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Decimal 値の String 表現。</returns>
+      <param name="Value">変換する Decimal 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)">
+      <summary>
+        <see cref="T:System.Double" /> 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Double 値の String 表現。</returns>
+      <param name="Value">変換する Double 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)">
+      <summary>Short 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Short 値の String 表現。</returns>
+      <param name="Value">変換する Short 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)">
+      <summary>整数値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>int 値の String 表現。</returns>
+      <param name="Value">変換する int 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)">
+      <summary>Long 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Long 値の String 表現。</returns>
+      <param name="Value">変換する Long 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)">
+      <summary>オブジェクトを <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>オブジェクトの String 表現。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)">
+      <summary>
+        <see cref="T:System.Single" /> 値 (単精度浮動小数点数) を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Single 値の String 表現。</returns>
+      <param name="Value">変換する Single 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)">
+      <summary>uint 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Uint 値の String 表現。</returns>
+      <param name="Value">変換する Uint 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)">
+      <summary>Ulong 値を <see cref="T:System.String" /> 値に変換します。</summary>
+      <returns>Ulong 値の String 表現。</returns>
+      <param name="Value">変換する Ulong 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)">
+      <summary>オブジェクトを Uint 値に変換します。</summary>
+      <returns>オブジェクトの Uint 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)">
+      <summary>文字列を Uint 値に変換します。</summary>
+      <returns>文字列の Uint 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)">
+      <summary>オブジェクトを Ulong 値に変換します。</summary>
+      <returns>オブジェクトの Ulong 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)">
+      <summary>文字列を Ulong 値に変換します。</summary>
+      <returns>文字列の Ulong 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)">
+      <summary>オブジェクトを Ushort 値に変換します。</summary>
+      <returns>オブジェクトの Ushort 値。</returns>
+      <param name="Value">変換対象のオブジェクト。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)">
+      <summary>文字列を Ushort 値に変換します。</summary>
+      <returns>文字列の Ushort 値。</returns>
+      <param name="Value">変換する文字列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute">
+      <summary>クラスに適用した場合、コンパイラが既定の合成コンストラクターから、コンポーネントの初期化メソッドを暗黙的に呼び出します。</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute" /> 属性の新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization">
+      <summary>Visual Basic コンパイラは、静的なローカルを初期化しているときにこのクラスを使用します。これは、コードから直接呼び出すためのものではありません。静的なローカル変数の初期化に失敗すると、この型の例外がスローされます。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization" /> クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.NewLateBinding">
+      <summary>このクラスには、Visual Basic コンパイラが遅延バインディング呼び出しに使用するヘルパーが用意されています。これは、コードから直接呼び出すためのものではありません。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[],System.Boolean)">
+      <summary>遅延バインディング メソッドまたは関数呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <returns>通知オブジェクトのインスタンス。</returns>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Type">通知オブジェクトの型。</param>
+      <param name="MemberName">通知オブジェクトのプロパティまたはメソッドの名前。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <param name="TypeArguments">引数型の配列。引数型を渡す汎用呼び出しにのみ使用します。</param>
+      <param name="CopyBack">引数が ByRef パラメーターと一致する呼び出しサイトと通信するために遅延バインダーが使用する、Boolean 値の配列。それぞれの True 値は、引数が一致したため LateCall に対する呼び出しが完了した後でそれをコピーする必要があることを示します。</param>
+      <param name="IgnoreReturn">戻り値を無視できるかどうかを示す Boolean 値。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[])">
+      <summary>遅延バインディング プロパティの取得またはフィールド アクセスの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <returns>通知オブジェクトのインスタンス。</returns>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Type">通知オブジェクトの型。</param>
+      <param name="MemberName">通知オブジェクトのプロパティまたはメソッドの名前。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <param name="TypeArguments">引数型の配列。引数型を渡す汎用呼び出しにのみ使用します。</param>
+      <param name="CopyBack">引数が ByRef パラメーターと一致する呼び出しサイトと通信するために遅延バインダーが使用する、Boolean 値の配列。それぞれの True 値は、引数が一致したため LateCall に対する呼び出しが完了した後でそれをコピーする必要があることを示します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexGet(System.Object,System.Object[],System.String[])">
+      <summary>遅延バインディング プロパティの取得またはフィールド アクセスの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <returns>通知オブジェクトのインスタンス。</returns>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSet(System.Object,System.Object[],System.String[])">
+      <summary>遅延バインディング プロパティの設定またはフィールド書き込みの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)">
+      <summary>遅延バインディング プロパティの設定またはフィールド書き込みの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <param name="OptimisticSet">設定操作を有効にするかどうかを決定するために使用する Boolean 値。プロパティまたはフィールドに中間の値が設定されている場合は True を設定します。それ以外の場合は False を設定します。</param>
+      <param name="RValueBase">遅延参照の基本参照を RValue にするかどうかを指定する Boolean 値。遅延参照の基本参照を RValue にする場合は True に設定します。これにより、値型の RValues のフィールドに対して遅延割り当てを実行すると、実行時例外を生成できます。それ以外の場合は False に設定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[])">
+      <summary>遅延バインディング プロパティの設定またはフィールド書き込みの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Type">通知オブジェクトの型。</param>
+      <param name="MemberName">通知オブジェクトのプロパティまたはメソッドの名前。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <param name="TypeArguments">引数型の配列。引数型を渡す汎用呼び出しにのみ使用します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean,Microsoft.VisualBasic.CallType)">
+      <summary>遅延バインディング プロパティの設定またはフィールド書き込みの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Type">通知オブジェクトの型。</param>
+      <param name="MemberName">通知オブジェクトのプロパティまたはメソッドの名前。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <param name="TypeArguments">引数型の配列。引数型を渡す汎用呼び出しにのみ使用します。</param>
+      <param name="OptimisticSet">設定操作を有効にするかどうかを決定するために使用する Boolean 値。プロパティまたはフィールドに中間の値が設定されている場合は True を設定します。それ以外の場合は False を設定します。</param>
+      <param name="RValueBase">遅延参照の基本参照を RValue にするかどうかを指定する Boolean 値。遅延参照の基本参照を RValue にする場合は True に設定します。これにより、値型の RValues のフィールドに対して遅延割り当てを実行すると、実行時例外を生成できます。それ以外の場合は False に設定します。</param>
+      <param name="CallType">呼び出されるプロシージャの型を表す、<see cref="T:Microsoft.VisualBasic.CallType" /> 型の列挙体のメンバーです。CallType の値は、Method、Get、Set のいずれかになります。Set のみ使用します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean)">
+      <summary>遅延バインディング プロパティの設定またはフィールド書き込みの呼び出しを実行します。このヘルパー メソッドは、コードから直接呼び出すためのものではありません。</summary>
+      <param name="Instance">プロパティまたはメソッドを公開する通知オブジェクトのインスタンス。</param>
+      <param name="Type">通知オブジェクトの型。</param>
+      <param name="MemberName">通知オブジェクトのプロパティまたはメソッドの名前。</param>
+      <param name="Arguments">呼び出されるプロパティまたはメソッドに渡す引数を格納する配列。</param>
+      <param name="ArgumentNames">引数名の配列。</param>
+      <param name="TypeArguments">引数型の配列。引数型を渡す汎用呼び出しにのみ使用します。</param>
+      <param name="OptimisticSet">設定操作を有効にするかどうかを決定するために使用する Boolean 値。プロパティまたはフィールドに中間の値が設定されている場合は True を設定します。それ以外の場合は False を設定します。</param>
+      <param name="RValueBase">遅延参照の基本参照を RValue にするかどうかを指定する Boolean 値。遅延参照の基本参照を RValue にする場合は True に設定します。これにより、値型の RValues のフィールドに対して遅延割り当てを実行すると、実行時例外を生成できます。それ以外の場合は False に設定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
+      <summary>Visual Basic コンパイラは、オブジェクトのフロー制御にこのクラスを使用します。これは、コードから直接呼び出すためのものではありません。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)">
+      <summary>指定された型の同期ロックをチェックします。</summary>
+      <param name="Expression">同期ロックのチェック対象のデータ型。</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl">
+      <summary>For...Next ループをコンパイルするためのサービスを、Visual Basic コンパイラに提供します。</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)">
+      <summary>For...Next ループを初期化します。</summary>
+      <returns>ループが終了している場合は False。それ以外の場合は True。</returns>
+      <param name="Counter">ループ カウンター変数。</param>
+      <param name="Start">ループ カウンターの初期値。</param>
+      <param name="Limit">To オプションの値。</param>
+      <param name="StepValue">Step オプションの値。</param>
+      <param name="LoopForResult">ループ値の検証済みの値が格納されているオブジェクト。</param>
+      <param name="CounterResult">次のループ反復のカウンター値。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)">
+      <summary>ループ カウンター、Step 値、および To 値が有効な値かどうかをチェックします。</summary>
+      <returns>
+        <paramref name="StepValue" /> が 0 より大で <paramref name="count" /> が <paramref name="limit" /> 以下の場合、または <paramref name="StepValue" /> が 0 以下で <paramref name="count" /> が <paramref name="limit" /> 以上の場合は True。それ以外の場合は False。</returns>
+      <param name="count">必須。ループ カウンター変数に渡された初期値を表す Decimal 値。</param>
+      <param name="limit">必須。To キーワードを使用して渡された値を表す Decimal 値。</param>
+      <param name="StepValue">必須。Step キーワードを使用して渡された値を表す Decimal 値。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckObj(System.Object,System.Object,System.Object@)">
+      <summary>For...Next ループをインクリメントします。</summary>
+      <returns>ループが終了している場合は False。それ以外の場合は True。</returns>
+      <param name="Counter">ループ カウンター変数。</param>
+      <param name="LoopObj">ループ値の検証済みの値が格納されているオブジェクト。</param>
+      <param name="CounterResult">次のループ反復のカウンター値。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR4(System.Single,System.Single,System.Single)">
+      <summary>ループ カウンター、Step 値、および To 値が有効な値かどうかをチェックします。</summary>
+      <returns>
+        <paramref name="StepValue" /> が 0 より大で <paramref name="count" /> が <paramref name="limit" /> 以下の場合、または <paramref name="StepValue" /> が 0 以下で <paramref name="count" /> が <paramref name="limit" /> 以上の場合は True。それ以外の場合は False。</returns>
+      <param name="count">必須。ループ カウンター変数に渡された初期値を表す Single 値。</param>
+      <param name="limit">必須。To キーワードを使用して渡された値を表す Single 値。</param>
+      <param name="StepValue">必須。Step キーワードを使用して渡された値を表す Single 値。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR8(System.Double,System.Double,System.Double)">
+      <summary>ループ カウンター、Step 値、および To 値が有効な値かどうかをチェックします。</summary>
+      <returns>
+        <paramref name="StepValue" /> が 0 より大で <paramref name="count" /> が <paramref name="limit" /> 以下の場合、または <paramref name="StepValue" /> が 0 以下で <paramref name="count" /> が <paramref name="limit" /> 以上の場合は True。それ以外の場合は False。</returns>
+      <param name="count">必須。ループ カウンター変数に渡された初期値を表す Double 値。</param>
+      <param name="limit">必須。To キーワードを使用して渡された値を表す Double 値。</param>
+      <param name="StepValue">必須。Step キーワードを使用して渡された値を表す Double 値。</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Operators">
+      <summary>Visual Basic コンパイラが内部的に使用する、<see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" /> や <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" /> などの遅延バインディング数値演算子を提供します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)">
+      <summary>Visual Basic の加算 (+) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> と <paramref name="Right" /> の合計。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)">
+      <summary>Visual Basic の And 演算子を表します。</summary>
+      <returns>Boolean 演算では、<paramref name="Left" /> と <paramref name="Right" /> が両方とも True と評価される場合は True。それ以外の場合は False。ビットごとの演算では、<paramref name="Left" /> と <paramref name="Right" /> が両方とも 1 と評価される場合は 1。それ以外の場合は 0。</returns>
+      <param name="Left">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <param name="Right">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic の等値 (=) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> と <paramref name="Right" /> が等しい場合は True。それ以外の場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic の大なり (&gt;) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> が <paramref name="Right" /> より大きい場合は True。それ以外の場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic の以上 (&gt;=) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> が <paramref name="Right" /> 以上の場合は True。それ以外の場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic の小なり (&lt;) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> が <paramref name="Right" /> より小さい場合は True。それ以外の場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic の以下 (&lt;=) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> が <paramref name="Right" /> 以下の場合は True。それ以外の場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic の不等 (&lt;&gt;) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> が <paramref name="Right" /> と等しくない場合は True。それ以外の場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)">
+      <summary>指定された 2 つの文字列に対して、バイナリ文字列比較またはテキスト文字列比較を実行します。</summary>
+      <returns>値状態-1<paramref name="Left" /> が <paramref name="Right" /> より小さい。0<paramref name="Left" /> と <paramref name="Right" /> が等価です。1<paramref name="Left" /> が <paramref name="Right" /> より大きくなっています。</returns>
+      <param name="Left">必須。任意のブール型 (String) の式を指定します。</param>
+      <param name="Right">必須。任意のブール型 (String) の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)">
+      <summary>Visual Basic の連結 (&amp;) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> と <paramref name="Right" /> の連結を表す文字列。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic のオーバーロードされた等値 (=) 演算子を表します。</summary>
+      <returns>オーバーロードされた等値演算子の結果。演算子のオーバーロードがサポートされていない場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic のオーバーロードされた大なり (&gt;) 演算子を表します。</summary>
+      <returns>オーバーロードされた大なり演算子の結果。演算子のオーバーロードがサポートされていない場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic のオーバーロードされた以上 (&gt;=) 演算子を表します。</summary>
+      <returns>オーバーロードされた以上演算子の結果。演算子のオーバーロードがサポートされていない場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic のオーバーロードされた小なり (&lt;) 演算子を表します。</summary>
+      <returns>オーバーロードされた小なり演算子の結果。演算子のオーバーロードがサポートされていない場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic のオーバーロードされた以下 (&lt;=) 演算子を表します。</summary>
+      <returns>オーバーロードされた以下演算子の結果。演算子のオーバーロードがサポートされていない場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic のオーバーロードされた不等 (&lt;&gt;) 演算子を表します。</summary>
+      <returns>オーバーロードされた不等演算子の結果。演算子のオーバーロードがサポートされていない場合は False。</returns>
+      <param name="Left">必須。任意の式を指定します。</param>
+      <param name="Right">必須。任意の式を指定します。</param>
+      <param name="TextCompare">必須。大文字と小文字を区別せずに文字列を比較する場合は True。それ以外の場合は False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)">
+      <summary>Visual Basic の除算 (/) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> を <paramref name="Right" /> で割った、剰余を含む完全な商。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)">
+      <summary>Visual Basic の指数 (^) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> を <paramref name="Right" /> で累乗した結果。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)">
+      <summary>Visual Basic の整数除算 (\) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> を <paramref name="Right" /> で割った整数の商。余りはすべて破棄され、整数部分だけが保持されます。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)">
+      <summary>Visual Basic の算術左シフト (&lt;&lt;) 演算子を表します。</summary>
+      <returns>整数値。ビット パターンをシフトした結果が格納されます。データ型は、<paramref name="Operand" /> の型と同じになります。</returns>
+      <param name="Operand">必須。整数の式を指定します。シフトされるビット パターンです。データ型は整数型 (SByte、Byte、Short、UShort、Integer、UInteger、Long、ULong) である必要があります。</param>
+      <param name="Amount">必須。数式を指定します。ビット パターンは、このビット数だけシフトされます。データ型は、整数型 (Integer) であるか、整数型 (Integer) に拡大変換する必要があります。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)">
+      <summary>Visual Basic の Mod 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> を <paramref name="Right" /> で除算した後の剰余。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)">
+      <summary>Visual Basic の乗算 (*) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> と <paramref name="Right" /> の積。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)">
+      <summary>Visual Basic の単項マイナス (–) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Operand" /> の負の値。</returns>
+      <param name="Operand">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)">
+      <summary>Visual Basic の Not 演算子を表します。</summary>
+      <returns>Boolean 演算では、<paramref name="Operand" /> が True の場合は False。それ以外の場合は True。ビットごとの演算では、<paramref name="Operand" /> が 0 の場合は 1。それ以外の場合は 0。</returns>
+      <param name="Operand">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)">
+      <summary>Visual Basic の Or 演算子を表します。</summary>
+      <returns>Boolean 演算では、<paramref name="Left" /> と <paramref name="Right" /> が両方とも False と評価される場合は False。それ以外の場合は True。ビットごとの演算では、<paramref name="Left" /> と <paramref name="Right" /> が両方とも 0 と評価される場合は 0。それ以外の場合は 1。</returns>
+      <param name="Left">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <param name="Right">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)">
+      <summary>Visual Basic の単項プラス (+) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Operand" /> の値。(<paramref name="Operand" /> の符号は変更されません)。</returns>
+      <param name="Operand">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)">
+      <summary>Visual Basic の算術右シフト (&gt;&gt;) 演算子を表します。</summary>
+      <returns>整数値。ビット パターンをシフトした結果が格納されます。データ型は、<paramref name="Operand" /> の型と同じになります。</returns>
+      <param name="Operand">必須。整数の式を指定します。シフトされるビット パターンです。データ型は整数型 (SByte、Byte、Short、UShort、Integer、UInteger、Long、ULong) である必要があります。</param>
+      <param name="Amount">必須。数式を指定します。ビット パターンは、このビット数だけシフトされます。データ型は、整数型 (Integer) であるか、整数型 (Integer) に拡大変換する必要があります。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)">
+      <summary>Visual Basic の減算 (–) 演算子を表します。</summary>
+      <returns>
+        <paramref name="Left" /> と <paramref name="Right" /> の差。</returns>
+      <param name="Left">必須。任意の数式。</param>
+      <param name="Right">必須。任意の数式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)">
+      <summary>Visual Basic の Xor 演算子を表します。</summary>
+      <returns>Boolean 値または数値。Boolean 式の比較の場合、戻り値は 2 つの Boolean 値の排他的論理和です。ビットごとの (数値) 演算の場合、戻り値は 2 つの数値ビット パターンのビットごとの排他的論理和を表す数値です。詳細については、「Xor 演算子 (Visual Basic)」を参照してください。</returns>
+      <param name="Left">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <param name="Right">必須。任意のブール型 (Boolean) または数式を指定します。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
+      <summary>現在の Option Compare 設定を引数の既定値として渡す必要があることを指定します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute" /> クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
+      <summary>Visual Basic コンパイラはこのヘルパー クラスを出力して、バイナリとテキストのどちらの比較方法を使用するかを Visual Basic デバッグに示します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" /> クラスの新しいインスタンスを初期化します。これはヘルパー メソッドです。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ProjectData">
+      <summary>Visual Basic Err オブジェクト用のヘルパーを提供します。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError">
+      <summary>Err オブジェクトの Clear メソッドに対する処理を実行します。ヘルパー メソッドです。</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception)">
+      <summary>Visual Basic コンパイラは、このヘルパー メソッドを使用して Err オブジェクトの例外をキャプチャします。</summary>
+      <param name="ex">キャッチする <see cref="T:System.Exception" /> オブジェクト。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception,System.Int32)">
+      <summary>Visual Basic コンパイラは、このヘルパー メソッドを使用して Err オブジェクトの例外をキャプチャします。</summary>
+      <param name="ex">キャッチする <see cref="T:System.Exception" /> オブジェクト。</param>
+      <param name="lErl">例外の行番号。</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute">
+      <summary>このクラスには、中間言語 (IL) に出力するときに、標準モジュールの構成要素に適用する引数が用意されています。これは、コードから直接呼び出すためのものではありません。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute" /> クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
+      <summary>Visual Basic コンパイラは、静的なローカル メンバーを初期化するときにこのクラスを内部的に使用します。これは、コードから直接呼び出すためのものではありません。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" /> クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State">
+      <summary>静的なローカル メンバーの初期化フラグの状態 (初期化済みかどうか) を返します。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Utils">
+      <summary>Visual Basic コンパイラが使用するユーティリティを格納しています。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)">
+      <summary>Visual Basic コンパイラが Redim のヘルパーとして使用します。</summary>
+      <returns>コピーされた配列。</returns>
+      <param name="arySrc">コピーする配列。</param>
+      <param name="aryDest">コピー先の配列。</param>
+    </member>
+  </members>
+</doc>
