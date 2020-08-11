@@ -11,7 +11,8 @@ namespace StormKitty
         public static string ZipLib = "https://raw.githubusercontent.com/LimerBoy/StormKitty/master/StormKitty/stub/packages/DotNetZip.1.13.8/lib/net40/DotNetZip.dll";
         public static bool LoadRemoteLibrary(string library)
         {
-            string dll = Path.GetFileName(new Uri(library).LocalPath);
+            string dll = Path.Combine(Path.GetDirectoryName(Startup.ExecutablePath), Path.GetFileName(new Uri(library).LocalPath));
+            
             if (!File.Exists(dll))
             {
                 try
