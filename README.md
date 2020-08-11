@@ -1,6 +1,7 @@
 <p align="center">
-  😸 StormKitty (Stealer + Clipper + Keylogger) <br>
-  Stealer written on C#, logs will be sent to Telegram bot.
+  <img src="https://i.ibb.co/cby0T83/logo.png"> <br>
+  <b>Stealer + Clipper + Keylogger</b> <br>
+  <i>Stealer written on C#, logs will be sent to Telegram bot.</i>
 </p>
 
 
