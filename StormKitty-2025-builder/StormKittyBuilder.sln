@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35716.79 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormKittyBuilder", "StormKittyBuilder\StormKittyBuilder.csproj", "{98075331-1F86-48C8-AE29-29DA39A8F98B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Debug|x64.ActiveCfg = Debug|x64
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Debug|x64.Build.0 = Debug|x64
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Release|x64.ActiveCfg = Release|x64
+		{98075331-1F86-48C8-AE29-29DA39A8F98B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8190B6BE-30AA-4602-9817-C138AE3B6651}
+	EndGlobalSection
+EndGlobal

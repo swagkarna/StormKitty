@@ -1,0 +1,998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.VisualBasic</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.VisualBasic.CallType">
+      <summary>CallByName 함수를 호출할 때 호출되는 프로시저 형식을 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Get">
+      <summary>속성 값을 가져옵니다.  이 멤버는 Visual Basic 상수 vbGet에 해당합니다.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Let">
+      <summary>개체 속성 값을 결정합니다.이 멤버는 Visual Basic 상수 vbLet에 해당합니다.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Method">
+      <summary>메서드를 호출합니다.  이 멤버는 Visual Basic 상수 vbMethod에 해당합니다.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Set">
+      <summary>속성 값을 결정합니다.  이 멤버는 Visual Basic 상수 vbSet에 해당합니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Constants">
+      <summary>Constants 모듈에는 기타 상수가 포함되어 있습니다.이 상수는 코드의 모든 위치에서 사용할 수 있습니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbBack">
+      <summary>인쇄 및 표시 함수의 백스페이스 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCr">
+      <summary>인쇄 및 표시 함수의 캐리지 리턴 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCrLf">
+      <summary>인쇄 및 표시 함수의 캐리지 리턴 문자/줄 바꿈 문자 조합을 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbFormFeed">
+      <summary>인쇄 함수의 용지 공급 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbLf">
+      <summary>인쇄 및 표시 함수의 줄 바꿈 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNewLine">
+      <summary>인쇄 및 표시 함수의 줄 바꿈 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullChar">
+      <summary>인쇄 및 표시 함수의 null 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullString">
+      <summary>인쇄 및 표시 함수의 길이가 0인 문자열을 나타나며 외부 프로시저를 호출하는 데 사용됩니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbTab">
+      <summary>인쇄 및 표시 함수의 탭 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbVerticalTab">
+      <summary>인쇄 함수의 캐리지 리턴 문자를 나타냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.HideModuleNameAttribute">
+      <summary>HideModuleNameAttribute 특성은 모듈에 적용될 경우 모듈에 필요한 자격만 사용하여 해당 모듈 멤버에 액세스할 수 있도록 합니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.HideModuleNameAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.HideModuleNameAttribute" /> 특성의 새 인스턴스를 초기화합니다. </summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Strings">
+      <summary>Strings 모듈에는 문자열 연산을 수행하는 데 사용되는 프로시저가 포함되어 있습니다. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.Char)">
+      <summary>문자에 해당하는 문자 코드를 나타내는 Integer 값을 반환합니다.</summary>
+      <returns>문자에 해당하는 문자 코드를 나타내는 Integer 값을 반환합니다.</returns>
+      <param name="String">필수적 요소로서,임의의 유효한 Char 또는 String 식입니다.<paramref name="String" />이 String 식이면 문자열의 첫 문자만 입력에 사용합니다.<paramref name="String" />이 Nothing이거나 문자를 포함하지 않으면 <see cref="T:System.ArgumentException" /> 오류가 발생합니다.</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.String)">
+      <summary>문자에 해당하는 문자 코드를 나타내는 Integer 값을 반환합니다.</summary>
+      <returns>문자에 해당하는 문자 코드를 나타내는 Integer 값을 반환합니다.</returns>
+      <param name="String">필수적 요소로서,임의의 유효한 Char 또는 String 식입니다.<paramref name="String" />이 String 식이면 문자열의 첫 문자만 입력에 사용합니다.<paramref name="String" />이 Nothing이거나 문자를 포함하지 않으면 <see cref="T:System.ArgumentException" /> 오류가 발생합니다.</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)">
+      <summary>지정한 문자 코드와 연관된 문자를 반환합니다.</summary>
+      <returns>지정한 문자 코드와 연관된 문자를 반환합니다.</returns>
+      <param name="CharCode">필수적 요소로서,문자에 대한 <paramref name="code point" />(또는 문자 코드)를 나타내는 Integer 식입니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="CharCode" />가 -32768보다 작거나 65535보다 큽니다(ChrW의 경우).</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Conversions">
+      <summary>다양한 형식 변환을 수행하는 메서드를 제공합니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)">
+      <summary>개체를 지정된 형식으로 변환합니다.</summary>
+      <returns>지정된 대상 형식의 개체입니다.</returns>
+      <param name="Expression">변환할 개체입니다.</param>
+      <param name="TargetType">개체를 변환할 대상 형식입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)">
+      <summary>개체를 <see cref="T:System.Boolean" /> 값으로 변환합니다.</summary>
+      <returns>Boolean 값입니다.개체가 null이면 False이고, 그렇지 않으면 True입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)">
+      <summary>문자열을 <see cref="T:System.Boolean" /> 값으로 변환합니다.</summary>
+      <returns>Boolean 값입니다.문자열이 null이면 False이고, 그렇지 않으면 True입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)">
+      <summary>개체를 <see cref="T:System.Byte" /> 값으로 변환합니다.</summary>
+      <returns>개체의 Byte 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)">
+      <summary>문자열을 <see cref="T:System.Byte" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 Byte 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)">
+      <summary>개체를 <see cref="T:System.Char" /> 값으로 변환합니다.</summary>
+      <returns>개체의 Char 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)">
+      <summary>문자열을 <see cref="T:System.Char" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 Char 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)">
+      <summary>개체를 1차원 <see cref="T:System.Char" /> 배열로 변환합니다.</summary>
+      <returns>1차원 Char 배열입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)">
+      <summary>문자열을 1차원 <see cref="T:System.Char" /> 배열로 변환합니다.</summary>
+      <returns>1차원 Char 배열입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)">
+      <summary>개체를 <see cref="T:System.DateTime" /> 값으로 변환합니다.</summary>
+      <returns>개체의 DateTime 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)">
+      <summary>문자열을 <see cref="T:System.DateTime" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 DateTime 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)">
+      <summary>
+        <see cref="T:System.Boolean" /> 값을 <see cref="T:System.Decimal" /> 값으로 변환합니다.</summary>
+      <returns>부울 값의 Decimal 값입니다.</returns>
+      <param name="Value">변환할 부울 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)">
+      <summary>개체를 <see cref="T:System.Decimal" /> 값으로 변환합니다.</summary>
+      <returns>개체의 Decimal 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)">
+      <summary>문자열을 <see cref="T:System.Decimal" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 Decimal 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)">
+      <summary>개체를 <see cref="T:System.Double" /> 값으로 변환합니다.</summary>
+      <returns>개체의 Double 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)">
+      <summary>문자열을 <see cref="T:System.Double" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 Double 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)">
+      <summary>개체를 제네릭 형식 <paramref name="T" />로 변환합니다.</summary>
+      <returns>제네릭 형식 <paramref name="T" />의 개체 또는 구조체입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <typeparam name="T">
+        <paramref name="Value" />를 변환할 형식입니다.</typeparam>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)">
+      <summary>개체를 정수 값으로 변환합니다.</summary>
+      <returns>개체의 int 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)">
+      <summary>문자열을 정수 값으로 변환합니다.</summary>
+      <returns>문자열의 int 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)">
+      <summary>개체를 Long 값으로 변환합니다.</summary>
+      <returns>개체의 Long 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)">
+      <summary>문자열을 Long 값으로 변환합니다.</summary>
+      <returns>문자열의 Long 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)">
+      <summary>개체를 <see cref="T:System.SByte" /> 값으로 변환합니다.</summary>
+      <returns>개체의 SByte 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)">
+      <summary>문자열을 <see cref="T:System.SByte" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 SByte 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)">
+      <summary>개체를 Short 값으로 변환합니다.</summary>
+      <returns>개체의 Short 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)">
+      <summary>문자열을 Short 값으로 변환합니다.</summary>
+      <returns>문자열의 Short 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)">
+      <summary>개체를 <see cref="T:System.Single" /> 값으로 변환합니다.</summary>
+      <returns>개체의 Single 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)">
+      <summary>
+        <see cref="T:System.String" />을 <see cref="T:System.Single" /> 값으로 변환합니다.</summary>
+      <returns>문자열의 Single 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)">
+      <summary>
+        <see cref="T:System.Boolean" /> 값을 <see cref="T:System.String" />으로 변환합니다.</summary>
+      <returns>Boolean 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Boolean 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)">
+      <summary>
+        <see cref="T:System.Byte" /> 값을 <see cref="T:System.String" />으로 변환합니다.</summary>
+      <returns>Byte 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Byte 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)">
+      <summary>
+        <see cref="T:System.Char" /> 값을 <see cref="T:System.String" />으로 변환합니다.</summary>
+      <returns>Char 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Char 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)">
+      <summary>
+        <see cref="T:System.DateTime" /> 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>DateTime 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 DateTime 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)">
+      <summary>
+        <see cref="T:System.Decimal" /> 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Decimal 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Decimal 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)">
+      <summary>
+        <see cref="T:System.Double" /> 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Double 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Double 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)">
+      <summary>Short 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Short 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Short 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)">
+      <summary>정수 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>int 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 int 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)">
+      <summary>Long 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Long 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Long 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)">
+      <summary>개체를 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>개체의 String 표현입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)">
+      <summary>
+        <see cref="T:System.Single" /> 값(단정밀도 부동 소수점 숫자)을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Single 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Single 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)">
+      <summary>uint 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Uint 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Uint 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)">
+      <summary>Ulong 값을 <see cref="T:System.String" /> 값으로 변환합니다.</summary>
+      <returns>Ulong 값의 String 표현입니다.</returns>
+      <param name="Value">변환할 Ulong 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)">
+      <summary>개체를 Uint 값으로 변환합니다.</summary>
+      <returns>개체의 Uint 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)">
+      <summary>문자열을 Uint 값으로 변환합니다.</summary>
+      <returns>문자열의 Uint 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)">
+      <summary>개체를 Ulong 값으로 변환합니다.</summary>
+      <returns>개체의 Ulong 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)">
+      <summary>문자열을 Ulong 값으로 변환합니다.</summary>
+      <returns>문자열의 Ulong 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)">
+      <summary>개체를 Ushort 값으로 변환합니다.</summary>
+      <returns>개체의 Ushort 값입니다.</returns>
+      <param name="Value">변환할 개체입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)">
+      <summary>문자열을 Ushort 값으로 변환합니다.</summary>
+      <returns>문자열의 Ushort 값입니다.</returns>
+      <param name="Value">변환할 문자열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute">
+      <summary>클래스에 적용되는 경우 컴파일러가 기본 합성 생성자에서 구성 요소 초기화 메서드를 암시적으로 호출합니다.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute" /> 특성의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization">
+      <summary>Visual Basic 컴파일러는 정적 지역 초기화 중 이 클래스를 사용합니다. 이 클래스는 코드에서 직접 호출할 수 없습니다.정적 지역 변수를 초기화하지 못하면 이 형식의 예외가 throw됩니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.NewLateBinding">
+      <summary>이 클래스는 Visual Basic 컴파일러에서 런타임에 바인딩하는 호출에 사용하는 도우미를 제공하며, 코드에서 직접 호출할 수 없습니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[],System.Boolean)">
+      <summary>런타임에 바인딩된 메서드 또는 함수 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <returns>호출 개체의 인스턴스입니다.</returns>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Type">호출 개체의 형식입니다.</param>
+      <param name="MemberName">호출 개체의 속성 또는 메서드 이름입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <param name="TypeArguments">인수 형식의 배열로, 제네릭 호출에서 인수 형식을 전달하는 데만 사용됩니다.</param>
+      <param name="CopyBack">런타임 바인더에서 ByRef 매개 변수와 일치하는 인수를 호출 사이트에 전달하는 데 사용하는 Boolean 값의 배열입니다.각각의 True 값은 인수가 일치하며 LateCall 호출이 완료된 후 복사되어야 함을 나타냅니다.</param>
+      <param name="IgnoreReturn">반환 값을 무시할 수 있는지 여부를 나타내는 Boolean 값입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[])">
+      <summary>런타임에 바인딩된 속성 가져오기 또는 필드 액세스 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <returns>호출 개체의 인스턴스입니다.</returns>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Type">호출 개체의 형식입니다.</param>
+      <param name="MemberName">호출 개체의 속성 또는 메서드 이름입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <param name="TypeArguments">인수 형식의 배열로, 제네릭 호출에서 인수 형식을 전달하는 데만 사용됩니다.</param>
+      <param name="CopyBack">런타임 바인더에서 ByRef 매개 변수와 일치하는 인수를 호출 사이트에 전달하는 데 사용하는 Boolean 값의 배열입니다.각각의 True 값은 인수가 일치하며 LateCall 호출이 완료된 후 복사되어야 함을 나타냅니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexGet(System.Object,System.Object[],System.String[])">
+      <summary>런타임에 바인딩된 속성 가져오기 또는 필드 액세스 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <returns>호출 개체의 인스턴스입니다.</returns>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSet(System.Object,System.Object[],System.String[])">
+      <summary>런타임에 바인딩된 속성 설정 또는 필드 쓰기 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)">
+      <summary>런타임에 바인딩된 속성 설정 또는 필드 쓰기 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <param name="OptimisticSet">설정 작업이 작동할지 여부를 확인하는 데 사용되는 Boolean 값입니다.속성 또는 필드에 중간 값이 설정되어 있다고 생각되면 True로 설정하고, 그렇지 않으면 False로 설정합니다.</param>
+      <param name="RValueBase">런타임 참조의 기본 참조가 RValue인 경우를 지정하는 Boolean 값입니다.런타임 참조의 기본 참조가 RValue이면 True로 설정합니다. 이렇게 하면 값 형식의 RValues 필드에 대한 런타임 할당의 런타임 예외를 생성할 수 있습니다.그렇지 않으면 False로 설정합니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[])">
+      <summary>런타임에 바인딩된 속성 설정 또는 필드 쓰기 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Type">호출 개체의 형식입니다.</param>
+      <param name="MemberName">호출 개체의 속성 또는 메서드 이름입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <param name="TypeArguments">인수 형식의 배열로, 제네릭 호출에서 인수 형식을 전달하는 데만 사용됩니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean,Microsoft.VisualBasic.CallType)">
+      <summary>런타임에 바인딩된 속성 설정 또는 필드 쓰기 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Type">호출 개체의 형식입니다.</param>
+      <param name="MemberName">호출 개체의 속성 또는 메서드 이름입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <param name="TypeArguments">인수 형식의 배열로, 제네릭 호출에서 인수 형식을 전달하는 데만 사용됩니다.</param>
+      <param name="OptimisticSet">설정 작업이 작동할지 여부를 확인하는 데 사용되는 Boolean 값입니다.속성 또는 필드에 중간 값이 설정되어 있다고 생각되면 True로 설정하고, 그렇지 않으면 False로 설정합니다.</param>
+      <param name="RValueBase">런타임 참조의 기본 참조가 RValue인 경우를 지정하는 Boolean 값입니다.런타임 참조의 기본 참조가 RValue이면 True로 설정합니다. 이렇게 하면 값 형식의 RValues 필드에 대한 런타임 할당의 런타임 예외를 생성할 수 있습니다.그렇지 않으면 False로 설정합니다.</param>
+      <param name="CallType">호출되는 프로시저 형식을 나타내는 <see cref="T:Microsoft.VisualBasic.CallType" /> 형식의 열거형 멤버입니다.CallType 값은 Method, Get 또는 Set이 될 수 있습니다.이 경우에는 Set만 사용됩니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean)">
+      <summary>런타임에 바인딩된 속성 설정 또는 필드 쓰기 호출을 실행합니다.이 도우미 메서드는 코드에서 직접 호출할 수 없습니다.</summary>
+      <param name="Instance">속성이나 메서드를 노출하는 호출 개체의 인스턴스입니다.</param>
+      <param name="Type">호출 개체의 형식입니다.</param>
+      <param name="MemberName">호출 개체의 속성 또는 메서드 이름입니다.</param>
+      <param name="Arguments">호출되는 속성이나 메서드에 전달할 인수를 포함하는 배열입니다.</param>
+      <param name="ArgumentNames">인수 이름의 배열입니다.</param>
+      <param name="TypeArguments">인수 형식의 배열로, 제네릭 호출에서 인수 형식을 전달하는 데만 사용됩니다.</param>
+      <param name="OptimisticSet">설정 작업이 작동할지 여부를 확인하는 데 사용되는 Boolean 값입니다.속성 또는 필드에 중간 값이 설정되어 있다고 생각되면 True로 설정하고, 그렇지 않으면 False로 설정합니다.</param>
+      <param name="RValueBase">런타임 참조의 기본 참조가 RValue인 경우를 지정하는 Boolean 값입니다.런타임 참조의 기본 참조가 RValue이면 True로 설정합니다. 이렇게 하면 값 형식의 RValues 필드에 대한 런타임 할당의 런타임 예외를 생성할 수 있습니다.그렇지 않으면 False로 설정합니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
+      <summary>Visual Basic 컴파일러는 개체 흐름 제어에 이 클래스를 사용합니다. 이 클래스는 코드에서 직접 호출할 수 없습니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)">
+      <summary>지정된 형식에 대한 동기화 잠금이 있는지 검사합니다.</summary>
+      <param name="Expression">동기화 잠금이 있는지 검사할 데이터 형식입니다.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl">
+      <summary>Visual Basic 컴파일러에 For...Next 루프를 컴파일하기 위한 서비스를 제공합니다.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)">
+      <summary>For...Next 루프를 초기화합니다.</summary>
+      <returns>루프가 종료되었으면 False이고, 그렇지 않으면 True입니다.</returns>
+      <param name="Counter">루프 카운터 변수입니다.</param>
+      <param name="Start">루프 카운터의 초기 값입니다.</param>
+      <param name="Limit">To 옵션의 값입니다.</param>
+      <param name="StepValue">Step 옵션의 값입니다.</param>
+      <param name="LoopForResult">루프 값에 대해 확인된 값을 포함하는 개체입니다.</param>
+      <param name="CounterResult">다음 루프 반복의 카운터 값입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)">
+      <summary>루프 카운터, Step 및 To 값이 올바른지 확인합니다.</summary>
+      <returns>
+        <paramref name="StepValue" />가 0보다 크고 <paramref name="count" />가 <paramref name="limit" />보다 작거나 같은 경우, 또는 <paramref name="StepValue" />가 0보다 작거나 같고 <paramref name="count" />가 <paramref name="limit" />보다 크거나 같은 경우 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="count">필수입니다.루프 카운터 변수에 전달된 초기 값을 나타내는 Decimal 값입니다.</param>
+      <param name="limit">필수입니다.To 키워드를 사용하여 전달된 값을 나타내는 Decimal 값입니다.</param>
+      <param name="StepValue">필수입니다.Step 키워드를 사용하여 전달된 값을 나타내는 Decimal 값입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckObj(System.Object,System.Object,System.Object@)">
+      <summary>For...Next 루프를 증가시킵니다.</summary>
+      <returns>루프가 종료되었으면 False이고, 그렇지 않으면 True입니다.</returns>
+      <param name="Counter">루프 카운터 변수입니다.</param>
+      <param name="LoopObj">루프 값에 대해 확인된 값을 포함하는 개체입니다.</param>
+      <param name="CounterResult">다음 루프 반복의 카운터 값입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR4(System.Single,System.Single,System.Single)">
+      <summary>루프 카운터, Step 및 To 값이 올바른지 확인합니다.</summary>
+      <returns>
+        <paramref name="StepValue" />가 0보다 크고 <paramref name="count" />가 <paramref name="limit" />보다 작거나 같은 경우, 또는 <paramref name="StepValue" />가 0보다 작거나 같고 <paramref name="count" />가 <paramref name="limit" />보다 크거나 같은 경우 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="count">필수입니다.루프 카운터 변수에 전달된 초기 값을 나타내는 Single 값입니다.</param>
+      <param name="limit">필수입니다.To 키워드를 사용하여 전달된 값을 나타내는 Single 값입니다.</param>
+      <param name="StepValue">필수입니다.Step 키워드를 사용하여 전달된 값을 나타내는 Single 값입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR8(System.Double,System.Double,System.Double)">
+      <summary>루프 카운터, Step 및 To 값이 올바른지 확인합니다.</summary>
+      <returns>
+        <paramref name="StepValue" />가 0보다 크고 <paramref name="count" />가 <paramref name="limit" />보다 작거나 같은 경우, 또는 <paramref name="StepValue" />가 0보다 작거나 같고 <paramref name="count" />가 <paramref name="limit" />보다 크거나 같은 경우 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="count">필수입니다.루프 카운터 변수에 전달된 초기 값을 나타내는 Double 값입니다.</param>
+      <param name="limit">필수입니다.To 키워드를 사용하여 전달된 값을 나타내는 Double 값입니다.</param>
+      <param name="StepValue">필수입니다.Step 키워드를 사용하여 전달된 값을 나타내는 Double 값입니다.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Operators">
+      <summary>Visual Basic 컴파일러에서 내부적으로 사용하는 <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" /> 및 <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />와 같은 런타임에 바인딩된 수학 연산자를 제공합니다. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)">
+      <summary>Visual Basic 더하기(+) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />와 <paramref name="Right" />의 합입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)">
+      <summary>Visual Basic And 연산자를 나타냅니다.</summary>
+      <returns>Boolean 연산의 경우 <paramref name="Left" />와 <paramref name="Right" />가 모두 True로 계산되면 True이고, 그렇지 않으면 False입니다.비트 연산의 경우 <paramref name="Left" />와 <paramref name="Right" />가 모두 1로 계산되면 1이고, 그렇지 않으면 0입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic 같음(=) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />와 <paramref name="Right" />가 같으면 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic 보다 큼(&gt;) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />가 <paramref name="Right" />보다 크면 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic 보다 크거나 같음(&gt;=) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />가 <paramref name="Right" />보다 크거나 같으면 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic 보다 작음(&lt;) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />가 <paramref name="Right" />보다 작으면 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic 보다 작거나 같음(&lt;=) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />가 <paramref name="Right" />보다 작거나 같으면 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>Visual Basic 같지 않음(&lt;&gt;) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />가 <paramref name="Right" />와 다르면 True이고, 그렇지 않으면 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)">
+      <summary>이진 비교를 수행하거나, 두 문자열이 지정된 경우 텍스트 문자열 비교를 수행합니다.</summary>
+      <returns>값 조건 -1 <paramref name="Left" />가 <paramref name="Right" />보다 작은 경우 0<paramref name="Left" />가 <paramref name="Right" />와 같은 경우 1 <paramref name="Left" />가 <paramref name="Right" />보다 큰 경우 </returns>
+      <param name="Left">필수적 요소로서,String 식입니다.</param>
+      <param name="Right">필수적 요소로서,String 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)">
+      <summary>Visual Basic 연결(&amp;) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />와 <paramref name="Right" />를 연결한 문자열입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>오버로드된 Visual Basic 같음(=) 연산자를 나타냅니다.</summary>
+      <returns>오버로드된 같음 연산자의 결과입니다.연산자 오버로드가 지원되지 않는 경우에는 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>오버로드된 Visual Basic 보다 큼(&gt;) 연산자를 나타냅니다.</summary>
+      <returns>오버로드된 보다 큼 연산자의 결과입니다.연산자 오버로드가 지원되지 않는 경우에는 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>오버로드된 Visual Basic 보다 크거나 같음(&gt;=) 연산자를 나타냅니다.</summary>
+      <returns>오버로드된 보다 크거나 같음 연산자의 결과입니다.연산자 오버로드가 지원되지 않는 경우에는 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>오버로드된 Visual Basic 보다 작음(&lt;) 연산자를 나타냅니다.</summary>
+      <returns>오버로드된 보다 작음 연산자의 결과입니다.연산자 오버로드가 지원되지 않는 경우에는 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>오버로드된 Visual Basic 작거나 같음(&lt;=) 연산자를 나타냅니다.</summary>
+      <returns>오버로드된 보다 작거나 같음 연산자의 결과입니다.연산자 오버로드가 지원되지 않는 경우에는 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>오버로드된 Visual Basic 같지 않음(&lt;&gt;) 연산자를 나타냅니다.</summary>
+      <returns>오버로드된 같지 않음 연산자의 결과입니다.연산자 오버로드가 지원되지 않는 경우에는 False입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 식입니다.</param>
+      <param name="TextCompare">필수적 요소로서,대/소문자를 구분하지 않고 비교하려면 True이고, 그렇지 않으면 False입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)">
+      <summary>Visual Basic 나누기(/) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />를 <paramref name="Right" />로 나눈 전체 몫(나머지 포함)입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)">
+      <summary>Visual Basic 지수(^) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />를 <paramref name="Right" />번 거듭제곱한 결과입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)">
+      <summary>Visual Basic 정수 나누기(\) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />를 <paramref name="Right" />로 나눠 나머지는 버리고 정수 부분만 남긴 몫입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)">
+      <summary>Visual Basic 산술 왼쪽 시프트(&lt;&lt;) 연산자를 나타냅니다.</summary>
+      <returns>정수 숫자 값입니다.비트 패턴을 이동한 결과입니다.데이터 형식은 <paramref name="Operand" />의 형식과 같습니다.</returns>
+      <param name="Operand">필수적 요소로서,정수 숫자 식입니다.이동할 비트 패턴입니다.데이터 형식은 정수 계열 형식(SByte, Byte, Short, UShort, Integer, UInteger, Long 또는 ULong)이어야 합니다.</param>
+      <param name="Amount">필수적 요소로서,숫자 식입니다.비트 패턴을 이동할 비트 수입니다.데이터 형식은 Integer이거나 Integer로 확장되어야 합니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)">
+      <summary>Visual Basic Mod 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />를 <paramref name="Right" />로 나눈 나머지입니다. </returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)">
+      <summary>Visual Basic 곱하기(*) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />와 <paramref name="Right" />의 곱입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)">
+      <summary>Visual Basic 단항 빼기(-) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Operand" />의 음수 값입니다.</returns>
+      <param name="Operand">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)">
+      <summary>Visual Basic Not 연산자를 나타냅니다.</summary>
+      <returns>Boolean 연산의 경우 <paramref name="Operand" />가 True이면 False이고, 그렇지 않으면 True입니다.비트 연산의 경우 <paramref name="Operand" />가 0이면 1이고, 그렇지 않으면 0입니다.</returns>
+      <param name="Operand">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)">
+      <summary>Visual Basic Or 연산자를 나타냅니다.</summary>
+      <returns>Boolean 연산의 경우 <paramref name="Left" />와 <paramref name="Right" />가 모두 False로 계산되면 False이고, 그렇지 않으면 True입니다.비트 연산의 경우 <paramref name="Left" />와 <paramref name="Right" />가 모두 0로 계산되면 0이고, 그렇지 않으면 1입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)">
+      <summary>Visual Basic 단항 더하기(-) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Operand" />의 값입니다. <paramref name="Operand" />의 부호는 변경되지 않습니다.</returns>
+      <param name="Operand">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)">
+      <summary>Visual Basic 산술 오른쪽 시프트(&gt;&gt;) 연산자를 나타냅니다.</summary>
+      <returns>정수 숫자 값입니다.비트 패턴을 이동한 결과입니다.데이터 형식은 <paramref name="Operand" />의 형식과 같습니다.</returns>
+      <param name="Operand">필수적 요소로서,정수 숫자 식입니다.이동할 비트 패턴입니다.데이터 형식은 정수 계열 형식(SByte, Byte, Short, UShort, Integer, UInteger, Long 또는 ULong)이어야 합니다.</param>
+      <param name="Amount">필수적 요소로서,숫자 식입니다.비트 패턴을 이동할 비트 수입니다.데이터 형식은 Integer이거나 Integer로 확장되어야 합니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)">
+      <summary>Visual Basic 빼기(-) 연산자를 나타냅니다.</summary>
+      <returns>
+        <paramref name="Left" />와 <paramref name="Right" />의 차이입니다.</returns>
+      <param name="Left">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)">
+      <summary>Visual Basic Xor 연산자를 나타냅니다.</summary>
+      <returns>Boolean 또는 숫자 값입니다.Boolean 비교의 경우 반환 값은 두 Boolean 값의 배타적 논리합입니다.비트(숫자) 연산의 경우 반환 값은 두 숫자 비트 패턴의 배타적 비트 논리합을 나타내는 숫자 값입니다.자세한 내용은 배타적 or 연산자(Visual Basic)을 참조하십시오.</returns>
+      <param name="Left">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <param name="Right">필수적 요소로서,임의의 Boolean 또는 숫자 식입니다.</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
+      <summary>현재 Option Compare 설정을 인수의 기본값으로 전달하도록 지정합니다. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
+      <summary>Visual Basic 컴파일러는 Visual Basic 디버깅을 위해 이진 또는 텍스트 비교 중에서 어떤 비교 옵션이 사용되는지를 나타내기 위해 이 도우미 클래스를 내보냅니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" /> 클래스의 새 인스턴스를 초기화합니다.이 메서드는 도우미 메서드입니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ProjectData">
+      <summary>Visual Basic Err 개체에 대한 도우미를 제공합니다. </summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError">
+      <summary>Err 개체의 Clear 메서드 작업을 수행합니다.도우미 메서드입니다.</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception)">
+      <summary>Visual Basic 컴파일러에서는 이 도우미 메서드를 사용하여 Err 개체에서 예외를 캡처합니다.</summary>
+      <param name="ex">catch할 <see cref="T:System.Exception" /> 개체입니다.</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception,System.Int32)">
+      <summary>Visual Basic 컴파일러에서는 이 도우미 메서드를 사용하여 Err 개체에서 예외를 캡처합니다.</summary>
+      <param name="ex">catch할 <see cref="T:System.Exception" /> 개체입니다.</param>
+      <param name="lErl">예외의 줄 번호입니다.</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute">
+      <summary>이 클래스는 표준 모듈 구문을 IL(Intermediate Language)에 내보낼 때 해당 구문에 적용되는 특성을 제공합니다.이 클래스는 코드에서 직접 호출할 수 없습니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
+      <summary>Visual Basic 컴파일러는 정적 로컬 멤버를 초기화할 때 이 클래스를 내부적으로 사용합니다. 이 클래스는 코드에서 직접 호출할 수 없습니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.#ctor">
+      <summary>
+        <see cref="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State">
+      <summary>정적 로컬 멤버의 초기화 플래그 상태(초기화되었는지 여부)를 반환합니다.</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Utils">
+      <summary>Visual Basic 컴파일러에서 사용하는 유틸리티가 들어 있습니다.</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)">
+      <summary>Visual Basic 컴파일러에서 Redim에 대한 도우미로 사용됩니다.</summary>
+      <returns>복사된 배열입니다.</returns>
+      <param name="arySrc">복사할 배열입니다.</param>
+      <param name="aryDest">대상 배열입니다.</param>
+    </member>
+  </members>
+</doc>

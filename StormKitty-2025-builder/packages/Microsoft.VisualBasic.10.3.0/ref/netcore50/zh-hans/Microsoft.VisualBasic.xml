@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.VisualBasic</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.VisualBasic.CallType">
+      <summary>指示在调用 CallByName 函数时调用的过程类型。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Get">
+      <summary>正在检索属性值。该成员等效于 Visual Basic 常数 vbGet。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Let">
+      <summary>正在确定 Object 属性值。该成员等效于 Visual Basic 常数 vbLet。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Method">
+      <summary>正在调用方法。该成员等效于 Visual Basic 常数 vbMethod。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CallType.Set">
+      <summary>正在确定属性值。该成员等效于 Visual Basic 常数 vbSet。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Constants">
+      <summary>Constants 模块包含杂项常数。这些常量可以在代码中的任何地方使用。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbBack">
+      <summary>表示用于打印和显示功能的退格符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCr">
+      <summary>表示用于打印和显示功能的回车符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbCrLf">
+      <summary>表示用于打印和显示功能的回车符和换行符的组合。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbFormFeed">
+      <summary>表示用于打印功能的换页符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbLf">
+      <summary>表示用于打印和显示功能的换行字符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNewLine">
+      <summary>表示用于打印和显示功能的换行字符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullChar">
+      <summary>表示用于打印和显示功能的 null 字符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbNullString">
+      <summary>表示用于打印和显示功能以及用于调用外部过程的零长度字符串。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbTab">
+      <summary>表示用于打印和显示功能的制表符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="F:Microsoft.VisualBasic.Constants.vbVerticalTab">
+      <summary>表示用于打印功能的回车字符。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.HideModuleNameAttribute">
+      <summary>当应用于模块时，HideModuleNameAttribute 属性允许仅使用模块所需的限定访问模块成员。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.HideModuleNameAttribute.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.HideModuleNameAttribute" /> 属性的新实例。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.Strings">
+      <summary>Strings 模块包含用于执行字符串操作的过程。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.Char)">
+      <summary>返回一个 Integer 值，该值表示与某个字符相对应的字符代码。</summary>
+      <returns>返回一个 Integer 值，该值表示与某个字符相对应的字符代码。</returns>
+      <param name="String">必选。任何有效的 Char 或 String 表达式。如果 <paramref name="String" /> 是一个 String 表达式，则只将字符串的第一个字符用于输入。如果 <paramref name="String" /> 是 Nothing 或不包含任何字符，将会出现 <see cref="T:System.ArgumentException" /> 错误。</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.AscW(System.String)">
+      <summary>返回一个 Integer 值，该值表示与某个字符相对应的字符代码。</summary>
+      <returns>返回一个 Integer 值，该值表示与某个字符相对应的字符代码。</returns>
+      <param name="String">必选。任何有效的 Char 或 String 表达式。如果 <paramref name="String" /> 是一个 String 表达式，则只将字符串的第一个字符用于输入。如果 <paramref name="String" /> 是 Nothing 或不包含任何字符，将会出现 <see cref="T:System.ArgumentException" /> 错误。</param>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)">
+      <summary>返回与指定字符代码相关联的字符。</summary>
+      <returns>返回与指定字符代码相关联的字符。</returns>
+      <param name="CharCode">必选。Integer 表达式，表示字符的 <paramref name="code point" /> 或字符代码。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="CharCode" /> &lt; -32768 或 &gt; 65535（对于 ChrW）。</exception>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Conversions">
+      <summary>提供执行各种类型转换的方法。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType(System.Object,System.Type)">
+      <summary>将对象转换为指定类型。</summary>
+      <returns>指定的目标类型的对象。</returns>
+      <param name="Expression">要转换的对象。</param>
+      <param name="TargetType">该对象要转换为的类型。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.Boolean" /> 值。</summary>
+      <returns>一个 Boolean 值。如果对象为 null，则返回 False；否则返回 True。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.Boolean" /> 值。</summary>
+      <returns>一个 Boolean 值。如果字符串为 null，则返回 False；否则返回 True。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.Byte" /> 值。</summary>
+      <returns>该对象的 Byte 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.Byte" /> 值。</summary>
+      <returns>该字符串的 Byte 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.Char" /> 值。</summary>
+      <returns>该对象的 Char 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToChar(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.Char" /> 值。</summary>
+      <returns>该字符串的 Char 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.Object)">
+      <summary>将对象转换为一维 <see cref="T:System.Char" /> 数组。</summary>
+      <returns>一维 Char 数组。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToCharArrayRankOne(System.String)">
+      <summary>将字符串转换为一维 <see cref="T:System.Char" /> 数组。</summary>
+      <returns>一维 Char 数组。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.DateTime" /> 值。</summary>
+      <returns>该对象的 DateTime 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDate(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.DateTime" /> 值。</summary>
+      <returns>该字符串的 DateTime 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Boolean)">
+      <summary>将 <see cref="T:System.Boolean" /> 值转换为 <see cref="T:System.Decimal" /> 值。</summary>
+      <returns>该布尔值的 Decimal 值。</returns>
+      <param name="Value">要转换的布尔值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.Decimal" /> 值。</summary>
+      <returns>该对象的 Decimal 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.Decimal" /> 值。</summary>
+      <returns>该字符串的 Decimal 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.Double" /> 值。</summary>
+      <returns>该对象的 Double 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.Double" /> 值。</summary>
+      <returns>该字符串的 Double 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToGenericParameter``1(System.Object)">
+      <summary>将对象转换为泛型类型 <paramref name="T" />。</summary>
+      <returns>泛型类型 <paramref name="T" /> 的结构或对象。</returns>
+      <param name="Value">要转换的对象。</param>
+      <typeparam name="T">
+        <paramref name="Value" /> 所要转换到的类型。</typeparam>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.Object)">
+      <summary>将对象转换为整数值。</summary>
+      <returns>该对象的 int 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(System.String)">
+      <summary>将字符串转换为整数值。</summary>
+      <returns>该字符串的 int 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.Object)">
+      <summary>将对象转换为 Long 值。</summary>
+      <returns>该对象的 Long 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(System.String)">
+      <summary>将字符串转换为 Long 值。</summary>
+      <returns>该字符串的 Long 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.SByte" /> 值。</summary>
+      <returns>该对象的 SByte 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSByte(System.String)">
+      <summary>将字符串转换为 <see cref="T:System.SByte" /> 值。</summary>
+      <returns>该字符串的 SByte 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.Object)">
+      <summary>将对象转换为 Short 值。</summary>
+      <returns>该对象的 Short 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToShort(System.String)">
+      <summary>将字符串转换为 Short 值。</summary>
+      <returns>该字符串的 Short 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.Single" /> 值。</summary>
+      <returns>该对象的 Single 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToSingle(System.String)">
+      <summary>将 <see cref="T:System.String" /> 转换为 <see cref="T:System.Single" /> 值。</summary>
+      <returns>该字符串的 Single 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Boolean)">
+      <summary>将 <see cref="T:System.Boolean" /> 值转换为 <see cref="T:System.String" />。</summary>
+      <returns>该 Boolean 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Boolean 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Byte)">
+      <summary>将 <see cref="T:System.Byte" /> 值转换为 <see cref="T:System.String" />。</summary>
+      <returns>该 Byte 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Byte 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Char)">
+      <summary>将 <see cref="T:System.Char" /> 值转换为 <see cref="T:System.String" />。</summary>
+      <returns>该 Char 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Char 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.DateTime)">
+      <summary>将 <see cref="T:System.DateTime" /> 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 DateTime 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 DateTime 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Decimal)">
+      <summary>将 <see cref="T:System.Decimal" /> 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Decimal 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Decimal 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Double)">
+      <summary>将 <see cref="T:System.Double" /> 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Double 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Double 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int16)">
+      <summary>将 Short 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Short 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Short 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int32)">
+      <summary>将整数值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 int 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 int 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Int64)">
+      <summary>将 Long 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Long 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Long 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Object)">
+      <summary>将对象转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该对象的 String 表示形式。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.Single)">
+      <summary>将 <see cref="T:System.Single" /> 值（单精度浮点数）转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Single 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Single 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt32)">
+      <summary>将 uint 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Uint 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Uint 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToString(System.UInt64)">
+      <summary>将 Ulong 值转换为 <see cref="T:System.String" /> 值。</summary>
+      <returns>该 Ulong 值的 String 表示形式。</returns>
+      <param name="Value">要转换的 Ulong 值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.Object)">
+      <summary>将对象转换为 Uint 值。</summary>
+      <returns>该对象的 Uint 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUInteger(System.String)">
+      <summary>将字符串转换为 Uint 值。</summary>
+      <returns>该字符串的 Uint 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.Object)">
+      <summary>将对象转换为 Ulong 值。</summary>
+      <returns>该对象的 Ulong 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToULong(System.String)">
+      <summary>将字符串转换为 Ulong 值。</summary>
+      <returns>该字符串的 Ulong 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.Object)">
+      <summary>将对象转换为 Ushort 值。</summary>
+      <returns>该对象的 Ushort 值。</returns>
+      <param name="Value">要转换的对象。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Conversions.ToUShort(System.String)">
+      <summary>将字符串转换为 Ushort 值。</summary>
+      <returns>该字符串的 Ushort 值。</returns>
+      <param name="Value">要转换的字符串。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute">
+      <summary>应用于类时，编译器从默认的合成构造函数隐式调用一个组件初始化方法。</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute" /> 属性的新实例。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization">
+      <summary>Visual Basic 编译器在静态局部初始化过程中使用此类；不应从代码中直接调用此类。如果静态局部变量初始化失败，则会引发这种类型的异常。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.CompilerServices.IncompleteInitialization" /> 类的新实例。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.NewLateBinding">
+      <summary>此类提供了一些供 Visual Basic 编译器用于后期绑定调用的帮助器；此类不宜从您的代码直接调用。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[],System.Boolean)">
+      <summary>执行后期绑定方法或函数调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <returns>调用对象的实例。</returns>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Type">调用对象的类型。</param>
+      <param name="MemberName">调用对象上的属性或方法的名称。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <param name="TypeArguments">参数类型的数组；只用于传递参数类型的泛型调用。</param>
+      <param name="CopyBack">Boolean 值的数组，后期联编程序使用此数组与调用站点进行回归通信，该调用站点的变量匹配 ByRef 参数。每个 True 值均指示参数匹配，并指示应在完成对 LateCall 的调用后将其复制出来。</param>
+      <param name="IgnoreReturn">一个 Boolean 值，指示是否可以忽略返回值。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean[])">
+      <summary>执行后期绑定属性获取或字段访问调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <returns>调用对象的实例。</returns>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Type">调用对象的类型。</param>
+      <param name="MemberName">调用对象上的属性或方法的名称。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <param name="TypeArguments">参数类型的数组；只用于传递参数类型的泛型调用。</param>
+      <param name="CopyBack">Boolean 值的数组，后期联编程序使用此数组与调用站点进行回归通信，该调用站点的变量匹配 ByRef 参数。每个 True 值均指示参数匹配，并指示应在完成对 LateCall 的调用后将其复制出来。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexGet(System.Object,System.Object[],System.String[])">
+      <summary>执行后期绑定属性获取或字段访问调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <returns>调用对象的实例。</returns>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSet(System.Object,System.Object[],System.String[])">
+      <summary>执行后期绑定属性设置或字段写入调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)">
+      <summary>执行后期绑定属性设置或字段写入调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <param name="OptimisticSet">一个 Boolean 值，用于确定设置操作是否起作用。如果确定已经在属性或字段中设置了中间值，则设置为 True，否则设置为 False。</param>
+      <param name="RValueBase">一个 Boolean 值，该值指定后期引用的基引用何时为 RValue。当后期引用的基引用为 RValue 时，则设置为 True；这允许您在后期赋值给值类型的 RValues 的字段时生成运行时异常。否则设置为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[])">
+      <summary>执行后期绑定属性设置或字段写入调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Type">调用对象的类型。</param>
+      <param name="MemberName">调用对象上的属性或方法的名称。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <param name="TypeArguments">参数类型的数组；只用于传递参数类型的泛型调用。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean,Microsoft.VisualBasic.CallType)">
+      <summary>执行后期绑定属性设置或字段写入调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Type">调用对象的类型。</param>
+      <param name="MemberName">调用对象上的属性或方法的名称。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <param name="TypeArguments">参数类型的数组；只用于传递参数类型的泛型调用。</param>
+      <param name="OptimisticSet">一个 Boolean 值，用于确定设置操作是否起作用。如果确定已经在属性或字段中设置了中间值，则设置为 True，否则设置为 False。</param>
+      <param name="RValueBase">一个 Boolean 值，该值指定后期引用的基引用何时为 RValue。当后期引用的基引用为 RValue 时，则设置为 True；这允许您在后期赋值给值类型的 RValues 的字段时生成运行时异常。否则设置为 False。</param>
+      <param name="CallType">类型 <see cref="T:Microsoft.VisualBasic.CallType" /> 的一个枚举成员，它表示正在被调用的过程的类型。CallType 的值可以是 Method、Get 或 Set。仅使用 Set。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Type[],System.Boolean,System.Boolean)">
+      <summary>执行后期绑定属性设置或字段写入调用。此帮助器方法不宜从您的代码直接调用。</summary>
+      <param name="Instance">公开属性或方法的调用对象的实例。</param>
+      <param name="Type">调用对象的类型。</param>
+      <param name="MemberName">调用对象上的属性或方法的名称。</param>
+      <param name="Arguments">一个数组，包含要传递给正在被调用的属性或方法的参数。</param>
+      <param name="ArgumentNames">参数名称的数组。</param>
+      <param name="TypeArguments">参数类型的数组；只用于传递参数类型的泛型调用。</param>
+      <param name="OptimisticSet">一个 Boolean 值，用于确定设置操作是否起作用。如果确定已经在属性或字段中设置了中间值，则设置为 True，否则设置为 False。</param>
+      <param name="RValueBase">一个 Boolean 值，该值指定后期引用的基引用何时为 RValue。当后期引用的基引用为 RValue 时，则设置为 True；这允许您在后期赋值给值类型的 RValues 的字段时生成运行时异常。否则设置为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
+      <summary>Visual Basic 编译器将此类用于对象流控制；这并不意味着要从您的代码中直接调用它。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)">
+      <summary>检查指定类型上的同步锁。</summary>
+      <param name="Expression">检查同步锁的数据类型。</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl">
+      <summary>向 Visual Basic 编译器提供用于编译 For...Next 循环的服务。</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)">
+      <summary>初始化一个 For...Next 循环。</summary>
+      <returns>如果循环已终止，则为 False；否则为 True。</returns>
+      <param name="Counter">循环计数器变量。</param>
+      <param name="Start">循环计数器的初始值。</param>
+      <param name="Limit">To 选项的值。</param>
+      <param name="StepValue">Step 选项的值。</param>
+      <param name="LoopForResult">一个对象，其中包含循环值的已验证值。</param>
+      <param name="CounterResult">下一个循环迭代的计数器值。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)">
+      <summary>检查循环计数器的有效值以及 Step 和 To 值。</summary>
+      <returns>如果 <paramref name="StepValue" /> 大于零且 <paramref name="count" /> 小于或等于 <paramref name="limit" />，或者 <paramref name="StepValue" /> 小于或等于零且 <paramref name="count" /> 大于或等于 <paramref name="limit" />，则为 True；否则为 False。</returns>
+      <param name="count">必选。一个 Decimal 值，表示为循环计数器变量传递的初始值。</param>
+      <param name="limit">必选。一个 Decimal 值，表示使用 To 关键字传递的值。</param>
+      <param name="StepValue">必选。一个 Decimal 值，表示使用 Step 关键字传递的值。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckObj(System.Object,System.Object,System.Object@)">
+      <summary>使 For...Next 循环次数递增。</summary>
+      <returns>如果循环已终止，则为 False；否则为 True。</returns>
+      <param name="Counter">循环计数器变量。</param>
+      <param name="LoopObj">一个对象，其中包含循环值的已验证值。</param>
+      <param name="CounterResult">下一个循环迭代的计数器值。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR4(System.Single,System.Single,System.Single)">
+      <summary>检查循环计数器的有效值以及 Step 和 To 值。</summary>
+      <returns>如果 <paramref name="StepValue" /> 大于零且 <paramref name="count" /> 小于或等于 <paramref name="limit" />，或者 <paramref name="StepValue" /> 小于或等于零且 <paramref name="count" /> 大于或等于 <paramref name="limit" />，则为 True；否则为 False。</returns>
+      <param name="count">必选。一个 Single 值，表示为循环计数器变量传递的初始值。</param>
+      <param name="limit">必选。一个 Single 值，表示使用 To 关键字传递的值。</param>
+      <param name="StepValue">必选。一个 Single 值，表示使用 Step 关键字传递的值。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.ForLoopControl.ForNextCheckR8(System.Double,System.Double,System.Double)">
+      <summary>检查循环计数器的有效值以及 Step 和 To 值。</summary>
+      <returns>如果 <paramref name="StepValue" /> 大于零且 <paramref name="count" /> 小于或等于 <paramref name="limit" />，或者 <paramref name="StepValue" /> 小于或等于零且 <paramref name="count" /> 大于或等于 <paramref name="limit" />，则为 True；否则为 False。</returns>
+      <param name="count">必选。一个 Double 值，表示为循环计数器变量传递的初始值。</param>
+      <param name="limit">必选。一个 Double 值，表示使用 To 关键字传递的值。</param>
+      <param name="StepValue">必选。一个 Double 值，表示使用 Step 关键字传递的值。</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Operators">
+      <summary>提供后期绑定的数学运算符，例如 Visual Basic 编译器在内部使用的 <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" /> 和 <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 加法 (+) 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 与 <paramref name="Right" /> 之和。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic And 运算符。</summary>
+      <returns>对于 Boolean 运算，如果 <paramref name="Left" /> 和 <paramref name="Right" /> 的计算结果都是 True，则为 True；否则为 False。对于按位运算，如果 <paramref name="Left" /> 和 <paramref name="Right" /> 的计算结果都是 1，则为 1；否则为 0。</returns>
+      <param name="Left">必选。任何 Boolean 或数值表达式。</param>
+      <param name="Right">必选。任何 Boolean 或数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示 Visual Basic 相等 (=) 运算符。</summary>
+      <returns>如果 <paramref name="Left" /> 和 <paramref name="Right" /> 相等，则为 True；否则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>表示 Visual Basic"大于"(&gt;) 运算符。</summary>
+      <returns>如果 <paramref name="Left" /> 大于 <paramref name="Right" />，则为 True；否则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示 Visual Basic"大于或等于"(&gt;=) 运算符。</summary>
+      <returns>如果 <paramref name="Left" /> 大于等于 <paramref name="Right" />，则为 True；否则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>表示 Visual Basic"小于"(&lt;) 运算符。</summary>
+      <returns>如果 <paramref name="Left" /> 小于 <paramref name="Right" />，则为 True；否则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示 Visual Basic"小于或等于"(&lt;=) 运算符。</summary>
+      <returns>如果 <paramref name="Left" /> 小于等于 <paramref name="Right" />，则为 True；否则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示 Visual Basic"不等于"(&lt;&gt;) 运算符。</summary>
+      <returns>如果 <paramref name="Left" /> 不等于 <paramref name="Right" />，则为 True；否则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)">
+      <summary>对给定的两个字符串执行二进制字符串或文本字符串比较。</summary>
+      <returns>值条件-1<paramref name="Left" /> 小于 <paramref name="Right" />。0<paramref name="Left" /> 等于 <paramref name="Right" />。1<paramref name="Left" /> 大于 <paramref name="Right" />。</returns>
+      <param name="Left">必选。任何 String 表达式。</param>
+      <param name="Right">必选。任何 String 表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 串联 (&amp;) 运算符。</summary>
+      <returns>一个字符串，表示 <paramref name="Left" /> 和 <paramref name="Right" /> 的串联。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示重载的 Visual Basic 相等 (=) 运算符。</summary>
+      <returns>重载的“等于”运算符的结果。如果不支持运算符重载，则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)">
+      <summary>表示重载的 Visual Basic"大于"(&gt;) 运算符。</summary>
+      <returns>重载的“大于”运算符的结果。如果不支持运算符重载，则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示重载的 Visual Basic"大于或等于"(&gt;=) 运算符。</summary>
+      <returns>重载的“大于或等于”运算符的结果。如果不支持运算符重载，则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)">
+      <summary>表示重载的 Visual Basic"小于"(&lt;) 运算符。</summary>
+      <returns>重载的“小于”运算符的结果。如果不支持运算符重载，则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示重载的 Visual Basic"小于或等于"(&lt;=) 运算符。</summary>
+      <returns>重载的“小于或等于”运算符的结果。如果不支持运算符重载，则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)">
+      <summary>表示重载的 Visual Basic"不等于"(&lt;&gt;) 运算符。</summary>
+      <returns>重载的“不等于”运算符的结果。如果不支持运算符重载，则为 False。</returns>
+      <param name="Left">必选。任何表达式。</param>
+      <param name="Right">必选。任何表达式。</param>
+      <param name="TextCompare">必选。如果执行不区分大小写的字符串比较，则为 True；否则为 False。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 除法 (/) 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 除以 <paramref name="Right" /> 的完整商，包括任何余数。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 指数 (^) 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 的 <paramref name="Right" /> 次幂的计算结果。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 整除 (\) 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 除以 <paramref name="Right" /> 的整数商，它丢弃了所有余数，而只保留整数部分。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic"算术左移位"(&lt;&lt;) 运算符。</summary>
+      <returns>一个整型数值，对该位模式进行移位的结果。数据类型与 <paramref name="Operand" /> 的数据类型相同。</returns>
+      <param name="Operand">必选。整型数值表达式。要进行移位的位模式。数据类型必须为整型（SByte、Byte、Short、UShort、Integer、UInteger、Long 或 ULong）。</param>
+      <param name="Amount">必选。数值表达式。要将该位模式移位的位数。数据类型必须为 Integer 或扩展到 Integer。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic Mod 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 除以 <paramref name="Right" /> 后所得的余数。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 乘法 (*) 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 与 <paramref name="Right" /> 的乘积。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)">
+      <summary>表示 Visual Basic 一元负 (–) 运算符。</summary>
+      <returns>
+        <paramref name="Operand" /> 的负值。</returns>
+      <param name="Operand">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)">
+      <summary>表示 Visual Basic Not 运算符。</summary>
+      <returns>对于 Boolean 运算，如果 <paramref name="Operand" /> 为 True，则为 False；否则为 True。对于按位运算，如果 <paramref name="Operand" /> 为 0，则为 1；否则为 0。</returns>
+      <param name="Operand">必选。任何 Boolean 或数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic Or 运算符。</summary>
+      <returns>对于 Boolean 运算，如果 <paramref name="Left" /> 和 <paramref name="Right" /> 的计算结果都是 False，则为 False；否则为 True。对于按位运算，如果 <paramref name="Left" /> 和 <paramref name="Right" /> 的计算结果都是 0，则为 0；否则为 1。</returns>
+      <param name="Left">必选。任何 Boolean 或数值表达式。</param>
+      <param name="Right">必选。任何 Boolean 或数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)">
+      <summary>表示 Visual Basic 一元正 (+) 运算符。</summary>
+      <returns>
+        <paramref name="Operand" /> 的值。（<paramref name="Operand" /> 的符号不变。）</returns>
+      <param name="Operand">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic"算术右移位"(&gt;&gt;) 运算符。</summary>
+      <returns>一个整型数值，对该位模式进行移位的结果。数据类型与 <paramref name="Operand" /> 的数据类型相同。</returns>
+      <param name="Operand">必选。整型数值表达式。要进行移位的位模式。数据类型必须为整型（SByte、Byte、Short、UShort、Integer、UInteger、Long 或 ULong）。</param>
+      <param name="Amount">必选。数值表达式。要将该位模式移位的位数。数据类型必须为 Integer 或扩展到 Integer。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic 减法 (–) 运算符。</summary>
+      <returns>
+        <paramref name="Left" /> 和 <paramref name="Right" /> 之间的差值。</returns>
+      <param name="Left">必选。任何数值表达式。</param>
+      <param name="Right">必选。任何数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)">
+      <summary>表示 Visual Basic Xor 运算符。</summary>
+      <returns>一个 Boolean 值或数值。对于 Boolean 比较，返回值是两个 Boolean 值的逻辑异运算（互斥逻辑析取）的结果。对于按位（数值）运算，返回值是表示两个数值位模式的按位异运算（互斥按位析取）结果的数值。有关详细信息，请参阅异或运算符 (Visual Basic)。</returns>
+      <param name="Left">必选。任何 Boolean 或数值表达式。</param>
+      <param name="Right">必选。任何 Boolean 或数值表达式。</param>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute">
+      <summary>指定应该将当前的 Option Compare 设置作为参数的默认值传递。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionCompareAttribute" /> 类的新实例。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute">
+      <summary>Visual Basic 编译器发出此帮助器类来指示（用于 Visual Basic 调试）要使用二进制比较选项还是文本比较选项。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" /> 类的新实例。这是一个帮助器方法。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.ProjectData">
+      <summary>为 Visual Basic Err 对象提供帮助器。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError">
+      <summary>执行 Err 对象的 Clear 方法的操作。即帮助器方法。</summary>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception)">
+      <summary>Visual Basic 编译器使用此帮助器方法在 Err 对象中捕获异常。</summary>
+      <param name="ex">要捕获的 <see cref="T:System.Exception" /> 对象。</param>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception,System.Int32)">
+      <summary>Visual Basic 编译器使用此帮助器方法在 Err 对象中捕获异常。</summary>
+      <param name="ex">要捕获的 <see cref="T:System.Exception" /> 对象。</param>
+      <param name="lErl">异常的行号。</param>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute">
+      <summary>此类提供了发送到中间语言 (IL) 时应用于标准模块构造的属性。它不应直接在您的代码中调用。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.CompilerServices.StandardModuleAttribute" /> 类的新实例。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag">
+      <summary>Visual Basic 编译器在初始化静态本地成员时内部使用此类；这并不意味着要从您的代码中直接调用它。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag" /> 类的新实例。</summary>
+    </member>
+    <member name="F:Microsoft.VisualBasic.CompilerServices.StaticLocalInitFlag.State">
+      <summary>返回静态本地成员的初始化标记（是否已初始化）的状态。</summary>
+    </member>
+    <member name="T:Microsoft.VisualBasic.CompilerServices.Utils">
+      <summary>包含 Visual Basic 编译器使用的实用工具。</summary>
+      <filterpriority>1</filterpriority>
+    </member>
+    <member name="M:Microsoft.VisualBasic.CompilerServices.Utils.CopyArray(System.Array,System.Array)">
+      <summary>由 Visual Basic 编译器用作 Redim 的帮助器。</summary>
+      <returns>复制的数组。</returns>
+      <param name="arySrc">要复制的数组。</param>
+      <param name="aryDest">目标数组。</param>
+    </member>
+  </members>
+</doc>
